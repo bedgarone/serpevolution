@@ -1,6 +1,7 @@
 import Head from "next/head";
-
 import Bluebar from "../components/bluebar";
+import NavigBar from "../components/navigbar";
+import ModuleTabs from "../components/moduletabs";
 
 export default function Home() {
   return (
@@ -15,7 +16,10 @@ export default function Home() {
       </Head>
 
       <Bluebar />
-      <div className="container"></div>
+      <NavigBar />
+      <div className="container mt-3">
+        <ModuleTabs />
+      </div>
     </div>
   );
 }
