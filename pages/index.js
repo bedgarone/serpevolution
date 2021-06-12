@@ -4,6 +4,7 @@ import NavigBar from "../components/navigbar";
 import ModuleTabs from "../components/moduletabs";
 import ElementTitle from "../components/elementtitle";
 import YearLine from "../components/yearline";
+import Timeline from "../components/timeline";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
       <div className="container mt-3">
         <ElementTitle />
         <YearLine />
+        <Timeline />
       </div>
     </div>
   );

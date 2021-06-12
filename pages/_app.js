@@ -1,5 +1,6 @@
 import "bootstrap/dist/css/bootstrap.css";
 import "../styles/global.css";
+import "../styles/timeline.scss";
 import Head from "next/head";
 
 function MyApp({ Component, pageProps }) {
