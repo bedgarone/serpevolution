@@ -2,6 +2,8 @@ import Head from "next/head";
 import Bluebar from "../components/bluebar";
 import NavigBar from "../components/navigbar";
 import ModuleTabs from "../components/moduletabs";
+import ElementTitle from "../components/elementtitle";
+import YearLine from "../components/yearline";
 
 export default function Home() {
   return (
@@ -18,7 +20,8 @@ export default function Home() {
       <Bluebar />
       <NavigBar />
       <div className="container mt-3">
-        <ModuleTabs />
+        <ElementTitle />
+        <YearLine />
       </div>
     </div>
   );
