@@ -4,7 +4,7 @@ export default function ElementPatterns() {
       <div
         className="applied-pattern d-flex"
         style={{
-          backgroundImage: "url(assets/patterns/mtabs.png)",
+          backgroundImage: "url(../assets/patterns/mtabs.png)",
           backgroundSize: "cover",
         }}
       >
@@ -13,7 +13,7 @@ export default function ElementPatterns() {
       <div
         className="applied-pattern d-flex"
         style={{
-          backgroundImage: "url(assets/patterns/news.png)",
+          backgroundImage: "url(../assets/patterns/news.png)",
           backgroundSize: "cover",
         }}
       >

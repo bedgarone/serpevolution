@@ -1,7 +1,6 @@
 import React from "react";
 
-const YearLine = (props) => {
-  const present = [2000, 2001, 2002, 2003];
+const YearLine = ({ present }) => {
   let years = [];
   for (let i = 2000; i < 2021; i++) {
     years.push(i);
