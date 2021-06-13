@@ -3,7 +3,7 @@ import React from "react";
 const YearLine = (props) => {
   return (
     <>
-      <div className="yearlinetitle">Presence timeline</div>
+      <div className="sectiontitle">Presence timeline</div>
       <div className="d-flex yearline">
         <button className="btn btn-link yearbtn">2000</button>
         <button className="btn btn-link yearbtn">2001</button>

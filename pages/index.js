@@ -5,6 +5,7 @@ import ModuleTabs from "../components/moduletabs";
 import ElementTitle from "../components/elementtitle";
 import YearLine from "../components/yearline";
 import Timeline from "../components/timeline";
+import Positioning from "../components/positioning";
 
 export default function Home() {
   return (
@@ -23,7 +24,17 @@ export default function Home() {
       <div className="container mt-3">
         <ElementTitle />
         <YearLine />
-        <Timeline />
+
+        <div className="row mt-4">
+          <div className="col-12 col-lg-6">
+            <div className="sectiontitle">Evolution</div>
+            <Timeline />
+          </div>
+          <div className="col-12 col-lg-6">
+            <div className="sectiontitle">Positioning</div>
+            <Positioning />
+          </div>
+        </div>
       </div>
     </div>
   );
