@@ -120,3 +120,20 @@ body {
   flex-direction: column;
   align-items: center;
 }
+
+.applied-pattern {
+  width: 100%;
+  height: 3rem;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 1em;
+  color: #fff;
+  font-weight: 200;
+  font-size: 1.5em;
+  margin-bottom: 5px;
+}
+.applied-pattern:hover {
+  opacity: 0.9;
+  cursor: pointer;
+  transition: 0.05s;
+}

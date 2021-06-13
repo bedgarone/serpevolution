@@ -22,7 +22,23 @@ export default function Home() {
 
       <Bluebar />
       <NavigBar />
-      <div className="container mt-3">Index Home</div>
+      <div className="container mt-3">
+        <ElementTitle />
+        <YearLine />
+
+        <div className="row mt-4">
+          <div className="col-12 col-lg-6">
+            <div className="sectiontitle">Evolution</div>
+            <Timeline />
+          </div>
+          <div className="col-12 col-lg-6">
+            <div className="sectiontitle">Positioning</div>
+            <Positioning />
+            <div className="sectiontitle mt-4">Design Patterns</div>
+            <ElementPatterns />
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
