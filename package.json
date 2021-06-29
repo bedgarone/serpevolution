@@ -1,4 +1,5 @@
 {
+  "homepage": "https://bedgarone.github.io/serpevolution",
   "name": "serpevolution",
   "version": "1.0.0",
   "description": "",
@@ -226,8 +227,12 @@
     "xtend": "^4.0.2",
     "yocto-queue": "^0.1.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "gh-pages": "^3.2.3"
+  },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "dev": "next dev"
   },
   "repository": {
@@ -239,6 +244,5 @@
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/bedgarone/serpevolution/issues"
-  },
-  "homepage": "https://github.com/bedgarone/serpevolution#readme"
+  }
 }
