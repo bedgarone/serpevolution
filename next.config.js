@@ -3,4 +3,6 @@ module.exports = {
     loader: "imgix",
     path: "",
   },
+  basePath: "/wallisconsultancy",
+  assetPrefix: "/wallisconsultancy/",
 };
