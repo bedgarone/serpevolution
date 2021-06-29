@@ -17,7 +17,7 @@ export default function Bluebar() {
       </div>
       <div className="queryBar d-flex flex-row">
         <div>A study on the evolution of user interfaces</div>
-        <img src="/assets/cross-search.png" alt="search" />
+        <img src="../assets/cross-search.png" alt="search" />
       </div>
     </div>
   );

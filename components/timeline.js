@@ -11,7 +11,7 @@ export default function Timeline({ serpelement }) {
             <div className="timeline-image">
               <img
                 src={
-                  "/assets/elements/" +
+                  "../assets/elements/" +
                   serpelement.engine +
                   "/" +
                   serpelement.shortname +

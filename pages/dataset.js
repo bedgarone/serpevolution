@@ -16,7 +16,8 @@ export default function Home() {
 
       <Bluebar />
       <div className="container mt-3 d-flex flex-column text-center">
-        Website available soon.
+        <h3>Dataset</h3>
+        Available soon.
       </div>
     </div>
   );
