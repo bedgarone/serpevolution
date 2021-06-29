@@ -233,7 +233,10 @@
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "dev": "next dev"
+    "dev": "next dev",
+    "build": "next build",
+    "export": "next export",
+    "start": "next start"
   },
   "repository": {
     "type": "git",
