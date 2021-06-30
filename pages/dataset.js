@@ -17,7 +17,20 @@ export default function Home() {
       <Bluebar />
       <div className="container mt-3 d-flex flex-column text-center">
         <h3>Dataset</h3>
-        Available soon.
+        <p>
+          <b>7892</b> SERP captures extracted from the <i>Internet Archive</i>.
+        </p>
+        <div>
+          <a
+            href="https://drive.google.com/file/d/1tjOPMcrHb3DxJA9n9XuUcoiFf_a3Og0p/view?usp=sharing"
+            target="_blank"
+          >
+            <button type="button" className="drive-btn btn btn-light">
+              <img src="assets/drive.png" />
+              Download from Google Drive
+            </button>
+          </a>
+        </div>
       </div>
     </div>
   );

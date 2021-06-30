@@ -17,7 +17,1203 @@ export default function Home() {
       <Bluebar />
       <div className="container mt-3 d-flex flex-column text-center">
         <h3>Most Searched Queries</h3>
-        Available soon.
+        <div className="queries-table">
+          <table cellSpacing={0} border={0}>
+            <colgroup width={189} span={5} />
+            <tbody>
+              <tr>
+                <td colSpan={5} valign="middle" height={39} align="center">
+                  <b>
+                    <font size={3} color="#000000"></font>
+                  </b>
+                </td>
+              </tr>
+              <tr>
+                <td
+                  sdval={2001}
+                  sdnum="1033;"
+                  valign="bottom"
+                  height={21}
+                  bgcolor="#CCCCCC"
+                  align="center"
+                >
+                  <b>
+                    <font color="#000000">2001</font>
+                  </b>
+                </td>
+                <td
+                  sdval={2002}
+                  sdnum="1033;"
+                  valign="bottom"
+                  bgcolor="#CCCCCC"
+                  align="center"
+                >
+                  <b>
+                    <font color="#000000">2002</font>
+                  </b>
+                </td>
+                <td
+                  sdval={2003}
+                  sdnum="1033;"
+                  valign="bottom"
+                  bgcolor="#CCCCCC"
+                  align="center"
+                >
+                  <b>
+                    <font color="#000000">2003</font>
+                  </b>
+                </td>
+                <td
+                  sdval={2004}
+                  sdnum="1033;"
+                  valign="bottom"
+                  bgcolor="#CCCCCC"
+                  align="center"
+                >
+                  <b>
+                    <font color="#000000">2004</font>
+                  </b>
+                </td>
+                <td
+                  sdval={2005}
+                  sdnum="1033;"
+                  valign="bottom"
+                  bgcolor="#CCCCCC"
+                  align="center"
+                >
+                  <b>
+                    <font color="#000000">2005</font>
+                  </b>
+                </td>
+              </tr>
+              <tr>
+                <td valign="bottom" height={21} align="left">
+                  <font color="#000000">Nokia</font>
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">Paris</font>
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">Earthquake</font>
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">Louis+Vuitton</font>
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">iPod</font>
+                </td>
+              </tr>
+              <tr>
+                <td valign="bottom" height={21} align="left">
+                  <font color="#000000">Morpheus</font>
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">Spiderman</font>
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">Iraq</font>
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">Doctor</font>
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">Janet+Jackson</font>
+                </td>
+              </tr>
+              <tr>
+                <td valign="bottom" height={21} align="left">
+                  <font color="#000000">Nostradamus</font>
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">IKEA</font>
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">Ferrari</font>
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">George+W.+Bush</font>
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">
+                    <br />
+                  </font>
+                </td>
+              </tr>
+              <tr>
+                <td valign="bottom" height={21} align="left">
+                  <font color="#000000">Beatles</font>
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">MP3</font>
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">eBay</font>
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">David+Beckham</font>
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">
+                    <br />
+                  </font>
+                </td>
+              </tr>
+              <tr>
+                <td valign="bottom" height={21} align="left">
+                  <font color="#000000">Amazon</font>
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">The+Sims</font>
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">Spa</font>
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">The+Simpsons</font>
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">
+                    <br />
+                  </font>
+                </td>
+              </tr>
+              <tr>
+                <td valign="bottom" height={21} align="left">
+                  <font color="#000000">Counterstrike</font>
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">Manga</font>
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">
+                    <br />
+                  </font>
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">France</font>
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">
+                    <br />
+                  </font>
+                </td>
+              </tr>
+              <tr>
+                <td valign="bottom" height={21} align="left">
+                  <font color="#000000">Harry+Potter</font>
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">Eminem</font>
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">
+                    <br />
+                  </font>
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">Bikini</font>
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">
+                    <br />
+                  </font>
+                </td>
+              </tr>
+              <tr>
+                <td valign="bottom" height={21} align="left">
+                  <font color="#000000">Windows+XP</font>
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">
+                    <br />
+                  </font>
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">
+                    <br />
+                  </font>
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">CNN</font>
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">
+                    <br />
+                  </font>
+                </td>
+              </tr>
+              <tr>
+                <td valign="bottom" height={21} align="center">
+                  <b>
+                    <font color="#000000">
+                      <br />
+                    </font>
+                  </b>
+                </td>
+                <td valign="bottom" align="center">
+                  <b>
+                    <font color="#000000">
+                      <br />
+                    </font>
+                  </b>
+                </td>
+                <td valign="bottom" align="center">
+                  <b>
+                    <font color="#000000">
+                      <br />
+                    </font>
+                  </b>
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">Walmart</font>
+                </td>
+                <td valign="bottom" align="center">
+                  <b>
+                    <font color="#000000">
+                      <br />
+                    </font>
+                  </b>
+                </td>
+              </tr>
+              <tr>
+                <td valign="bottom" height={21} align="center">
+                  <b>
+                    <font color="#000000">
+                      <br />
+                    </font>
+                  </b>
+                </td>
+                <td valign="bottom" align="center">
+                  <b>
+                    <font color="#000000">
+                      <br />
+                    </font>
+                  </b>
+                </td>
+                <td valign="bottom" align="center">
+                  <b>
+                    <font color="#000000">
+                      <br />
+                    </font>
+                  </b>
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">YMCA</font>
+                </td>
+                <td valign="bottom" align="center">
+                  <b>
+                    <font color="#000000">
+                      <br />
+                    </font>
+                  </b>
+                </td>
+              </tr>
+              <tr>
+                <td valign="bottom" height={21} align="center">
+                  <b>
+                    <font color="#000000">
+                      <br />
+                    </font>
+                  </b>
+                </td>
+                <td valign="bottom" align="center">
+                  <b>
+                    <font color="#000000">
+                      <br />
+                    </font>
+                  </b>
+                </td>
+                <td valign="bottom" align="center">
+                  <b>
+                    <font color="#000000">
+                      <br />
+                    </font>
+                  </b>
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">SCO</font>
+                </td>
+                <td valign="bottom" align="center">
+                  <b>
+                    <font color="#000000">
+                      <br />
+                    </font>
+                  </b>
+                </td>
+              </tr>
+              <tr>
+                <td valign="bottom" height={21} align="center">
+                  <b>
+                    <font color="#000000">
+                      <br />
+                    </font>
+                  </b>
+                </td>
+                <td valign="bottom" align="center">
+                  <b>
+                    <font color="#000000">
+                      <br />
+                    </font>
+                  </b>
+                </td>
+                <td valign="bottom" align="center">
+                  <b>
+                    <font color="#000000">
+                      <br />
+                    </font>
+                  </b>
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">Pizza</font>
+                </td>
+                <td valign="bottom" align="center">
+                  <b>
+                    <font color="#000000">
+                      <br />
+                    </font>
+                  </b>
+                </td>
+              </tr>
+              <tr>
+                <td valign="bottom" height={21} align="center">
+                  <b>
+                    <font color="#000000">
+                      <br />
+                    </font>
+                  </b>
+                </td>
+                <td valign="bottom" align="center">
+                  <b>
+                    <font color="#000000">
+                      <br />
+                    </font>
+                  </b>
+                </td>
+                <td valign="bottom" align="center">
+                  <b>
+                    <font color="#000000">
+                      <br />
+                    </font>
+                  </b>
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">Orlando+Bloom</font>
+                </td>
+                <td valign="bottom" align="center">
+                  <b>
+                    <font color="#000000">
+                      <br />
+                    </font>
+                  </b>
+                </td>
+              </tr>
+              <tr>
+                <td valign="bottom" height={21} align="center">
+                  <b>
+                    <font color="#000000">
+                      <br />
+                    </font>
+                  </b>
+                </td>
+                <td valign="bottom" align="center">
+                  <b>
+                    <font color="#000000">
+                      <br />
+                    </font>
+                  </b>
+                </td>
+                <td valign="bottom" align="center">
+                  <b>
+                    <font color="#000000">
+                      <br />
+                    </font>
+                  </b>
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">Real+Estate</font>
+                </td>
+                <td valign="bottom" align="center">
+                  <b>
+                    <font color="#000000">
+                      <br />
+                    </font>
+                  </b>
+                </td>
+              </tr>
+              <tr>
+                <td valign="bottom" height={21} align="center">
+                  <b>
+                    <font color="#000000">
+                      <br />
+                    </font>
+                  </b>
+                </td>
+                <td valign="bottom" align="center">
+                  <b>
+                    <font color="#000000">
+                      <br />
+                    </font>
+                  </b>
+                </td>
+                <td valign="bottom" align="center">
+                  <b>
+                    <font color="#000000">
+                      <br />
+                    </font>
+                  </b>
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">Britney+Spears</font>
+                </td>
+                <td valign="bottom" align="center">
+                  <b>
+                    <font color="#000000">
+                      <br />
+                    </font>
+                  </b>
+                </td>
+              </tr>
+              <tr>
+                <td valign="bottom" height={21} align="center">
+                  <b>
+                    <font color="#000000">
+                      <br />
+                    </font>
+                  </b>
+                </td>
+                <td valign="bottom" align="center">
+                  <b>
+                    <font color="#000000">
+                      <br />
+                    </font>
+                  </b>
+                </td>
+                <td valign="bottom" align="center">
+                  <b>
+                    <font color="#000000">
+                      <br />
+                    </font>
+                  </b>
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">Wallpaper</font>
+                </td>
+                <td valign="bottom" align="center">
+                  <b>
+                    <font color="#000000">
+                      <br />
+                    </font>
+                  </b>
+                </td>
+              </tr>
+              <tr>
+                <td
+                  sdval={2006}
+                  sdnum="1033;"
+                  valign="bottom"
+                  height={21}
+                  bgcolor="#CCCCCC"
+                  align="center"
+                >
+                  <b>
+                    <font color="#000000">2006</font>
+                  </b>
+                </td>
+                <td
+                  sdval={2007}
+                  sdnum="1033;"
+                  valign="bottom"
+                  bgcolor="#CCCCCC"
+                  align="center"
+                >
+                  <b>
+                    <font color="#000000">2007</font>
+                  </b>
+                </td>
+                <td
+                  sdval={2008}
+                  sdnum="1033;"
+                  valign="bottom"
+                  bgcolor="#CCCCCC"
+                  align="center"
+                >
+                  <b>
+                    <font color="#000000">2008</font>
+                  </b>
+                </td>
+                <td
+                  sdval={2009}
+                  sdnum="1033;"
+                  valign="bottom"
+                  bgcolor="#CCCCCC"
+                  align="center"
+                >
+                  <b>
+                    <font color="#000000">2009</font>
+                  </b>
+                </td>
+                <td
+                  sdval={2010}
+                  sdnum="1033;"
+                  valign="bottom"
+                  bgcolor="#CCCCCC"
+                  align="center"
+                >
+                  <b>
+                    <font color="#000000">2010</font>
+                  </b>
+                </td>
+              </tr>
+              <tr>
+                <td valign="bottom" height={21} align="left">
+                  <font color="#000000">Paris+Hilton</font>
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">American+Idol</font>
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">How+To+Draw</font>
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">Michael+Jackson</font>
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">iPad</font>
+                </td>
+              </tr>
+              <tr>
+                <td valign="bottom" height={21} align="left">
+                  <font color="#000000">Bebo</font>
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">
+                    <br />
+                  </font>
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">Los+Angeles+Lakers</font>
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">Acai+Berry</font>
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">MasterChef</font>
+                </td>
+              </tr>
+              <tr>
+                <td valign="bottom" height={21} align="left">
+                  <font color="#000000">Who+is+Borat</font>
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">
+                    <br />
+                  </font>
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">Gymnastics</font>
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">Real+Madrid</font>
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">Chatroulette</font>
+                </td>
+              </tr>
+              <tr>
+                <td valign="bottom" height={21} align="left">
+                  <font color="#000000">Where+is+Togo</font>
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">
+                    <br />
+                  </font>
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">Martini</font>
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">Beijing+2008</font>
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">Justin+Bieber</font>
+                </td>
+              </tr>
+              <tr>
+                <td valign="bottom" height={21} align="left">
+                  <font color="#000000">What+is+Hezbollah</font>
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">
+                    <br />
+                  </font>
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">Heath+Ledger</font>
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">Windows+7</font>
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">Big+Meech</font>
+                </td>
+              </tr>
+              <tr>
+                <td valign="bottom" height={21} align="left">
+                  <font color="#000000">
+                    <br />
+                  </font>
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">
+                    <br />
+                  </font>
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">Hugh+Hefner+&amp;+Holly+Madison</font>
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">
+                    <br />
+                  </font>
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">
+                    <br />
+                  </font>
+                </td>
+              </tr>
+              <tr>
+                <td valign="bottom" height={21} align="left">
+                  <font color="#000000">
+                    <br />
+                  </font>
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">
+                    <br />
+                  </font>
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">Boston+Red+Sox</font>
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">
+                    <br />
+                  </font>
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">
+                    <br />
+                  </font>
+                </td>
+              </tr>
+              <tr>
+                <td valign="bottom" height={21} align="left">
+                  <font color="#000000">
+                    <br />
+                  </font>
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">
+                    <br />
+                  </font>
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">New+York+Giants</font>
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">
+                    <br />
+                  </font>
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">
+                    <br />
+                  </font>
+                </td>
+              </tr>
+              <tr>
+                <td valign="bottom" height={21} align="left">
+                  <font color="#000000">
+                    <br />
+                  </font>
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">
+                    <br />
+                  </font>
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">Fox</font>
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">
+                    <br />
+                  </font>
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">
+                    <br />
+                  </font>
+                </td>
+              </tr>
+              <tr>
+                <td valign="bottom" height={21} align="left">
+                  <font color="#000000">
+                    <br />
+                  </font>
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">
+                    <br />
+                  </font>
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">Manchester+United+F.C.</font>
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">
+                    <br />
+                  </font>
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">
+                    <br />
+                  </font>
+                </td>
+              </tr>
+              <tr>
+                <td valign="bottom" height={21} align="left">
+                  <font color="#000000">
+                    <br />
+                  </font>
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">
+                    <br />
+                  </font>
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">What+is+Love</font>
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">
+                    <br />
+                  </font>
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">
+                    <br />
+                  </font>
+                </td>
+              </tr>
+              <tr>
+                <td valign="bottom" height={21} align="left">
+                  <font color="#000000">
+                    <br />
+                  </font>
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">
+                    <br />
+                  </font>
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">Ice+Cream</font>
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">
+                    <br />
+                  </font>
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">
+                    <br />
+                  </font>
+                </td>
+              </tr>
+              <tr>
+                <td valign="bottom" height={21} align="left">
+                  <font color="#000000">
+                    <br />
+                  </font>
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">
+                    <br />
+                  </font>
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">Facebook</font>
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">
+                    <br />
+                  </font>
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">
+                    <br />
+                  </font>
+                </td>
+              </tr>
+              <tr>
+                <td
+                  sdval={2011}
+                  sdnum="1033;"
+                  valign="bottom"
+                  height={21}
+                  bgcolor="#CCCCCC"
+                  align="center"
+                >
+                  <b>
+                    <font color="#000000">2011</font>
+                  </b>
+                </td>
+                <td
+                  sdval={2012}
+                  sdnum="1033;"
+                  valign="bottom"
+                  bgcolor="#CCCCCC"
+                  align="center"
+                >
+                  <b>
+                    <font color="#000000">2012</font>
+                  </b>
+                </td>
+                <td
+                  sdval={2013}
+                  sdnum="1033;"
+                  valign="bottom"
+                  bgcolor="#CCCCCC"
+                  align="center"
+                >
+                  <b>
+                    <font color="#000000">2013</font>
+                  </b>
+                </td>
+                <td
+                  sdval={2014}
+                  sdnum="1033;"
+                  valign="bottom"
+                  bgcolor="#CCCCCC"
+                  align="center"
+                >
+                  <b>
+                    <font color="#000000">2014</font>
+                  </b>
+                </td>
+                <td
+                  sdval={2015}
+                  sdnum="1033;"
+                  valign="bottom"
+                  bgcolor="#CCCCCC"
+                  align="center"
+                >
+                  <b>
+                    <font color="#000000">2015</font>
+                  </b>
+                </td>
+              </tr>
+              <tr>
+                <td valign="bottom" height={21} align="left">
+                  <font color="#000000">Fukushima</font>
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">Southwest+Airlines</font>
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">Oscar+Pistorius</font>
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">iPhone+6</font>
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">Jurassic+World</font>
+                </td>
+              </tr>
+              <tr>
+                <td valign="bottom" height={21} align="left">
+                  <font color="#000000">Wendy's</font>
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">One+Direction</font>
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">Man+of+Steel</font>
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">Robin+Williams</font>
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">Adele</font>
+                </td>
+              </tr>
+              <tr>
+                <td valign="bottom" height={21} align="left">
+                  <font color="#000000">Myspace</font>
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">The+Hunger+Games</font>
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">Boston+Marathon</font>
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">Jennifer+Lawrence</font>
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">iPhone+6S</font>
+                </td>
+              </tr>
+              <tr>
+                <td valign="bottom" height={21} align="left">
+                  <font color="#000000">UTM</font>
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">Whitney+Houston</font>
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">Nelson+Mandela</font>
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">Ebola</font>
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">Bobbi+Kristina</font>
+                </td>
+              </tr>
+              <tr>
+                <td valign="bottom" height={21} align="left">
+                  <font color="#000000">Rebbeca+Black</font>
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">Gangnam+Style</font>
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">Under+The+Dome</font>
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">Brazil+vs+Germany</font>
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">Lamar+Odom</font>
+                </td>
+              </tr>
+              <tr>
+                <td
+                  sdval={2016}
+                  sdnum="1033;"
+                  valign="bottom"
+                  height={21}
+                  bgcolor="#CCCCCC"
+                  align="center"
+                >
+                  <b>2016</b>
+                </td>
+                <td
+                  sdval={2017}
+                  sdnum="1033;"
+                  valign="bottom"
+                  bgcolor="#CCCCCC"
+                  align="center"
+                >
+                  <b>2017</b>
+                </td>
+                <td
+                  sdval={2018}
+                  sdnum="1033;"
+                  valign="bottom"
+                  bgcolor="#CCCCCC"
+                  align="center"
+                >
+                  <b>2018</b>
+                </td>
+                <td
+                  sdval={2019}
+                  sdnum="1033;"
+                  valign="bottom"
+                  bgcolor="#CCCCCC"
+                  align="center"
+                >
+                  <b>2019</b>
+                </td>
+                <td
+                  sdval={2020}
+                  sdnum="1033;"
+                  valign="bottom"
+                  bgcolor="#CCCCCC"
+                  align="center"
+                >
+                  <b>2020</b>
+                </td>
+              </tr>
+              <tr>
+                <td valign="bottom" height={21} align="left">
+                  iPhone+7
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">Wimbledon</font>
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">Sylvester+Stallone</font>
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">Jussie+Smollett</font>
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">Joe+Biden</font>
+                </td>
+              </tr>
+              <tr>
+                <td valign="bottom" height={21} align="left">
+                  Deadpool
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">iPhone+8</font>
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">Black+Panther</font>
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">Cameron+Boyce</font>
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">Coronavirus</font>
+                </td>
+              </tr>
+              <tr>
+                <td valign="bottom" height={21} align="left">
+                  US+Election
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">IT</font>
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">World+Cup</font>
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">Avengers:+Endgame</font>
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">WAP</font>
+                </td>
+              </tr>
+              <tr>
+                <td valign="bottom" height={21} align="left">
+                  Donald+Trump
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">Despacito</font>
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">Demi+Lovato</font>
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">Game+of+Thrones</font>
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">Tom+Hanks</font>
+                </td>
+              </tr>
+              <tr>
+                <td valign="bottom" height={21} align="left">
+                  Prince
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">Ariana+Grande</font>
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">Meghan+Markle</font>
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">Antonio+Brown</font>
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">Among+Us</font>
+                </td>
+              </tr>
+              <tr>
+                <td valign="bottom" height={21} align="left">
+                  <font color="#000000">
+                    <br />
+                  </font>
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">
+                    <br />
+                  </font>
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">Avicii</font>
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">India+vs+South+Africa</font>
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">Parasite</font>
+                </td>
+              </tr>
+              <tr>
+                <td valign="bottom" height={21} align="left">
+                  <font color="#000000">
+                    <br />
+                  </font>
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">
+                    <br />
+                  </font>
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">Tristian+Thompson</font>
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">Old+Town+Road</font>
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">Together+At+Home+concert</font>
+                </td>
+              </tr>
+              <tr>
+                <td valign="bottom" height={21} align="left">
+                  <font color="#000000">
+                    <br />
+                  </font>
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">
+                    <br />
+                  </font>
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">
+                    <br />
+                  </font>
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">
+                    <br />
+                  </font>
+                </td>
+                <td valign="bottom" align="left">
+                  <font color="#000000">
+                    <br />
+                  </font>
+                </td>
+              </tr>
+              <tr>
+                <td colSpan={5} valign="middle" height={40} align="left">
+                  <font color="#000000">
+                    This table refers to the first query from each category, and
+                    disconsiders repeated elements. The number of categories in
+                    Google Trends is not consistent over time.
+                  </font>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
     </div>
   );

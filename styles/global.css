@@ -137,3 +137,14 @@ body {
   cursor: pointer;
   transition: 0.05s;
 }
+
+.drive-btn > img {
+  height: 30px;
+  margin-right: 10px;
+}
+
+.queries-table {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3em;
+}
