@@ -7,19 +7,10 @@ import YearLine from "../../components/yearline";
 import Timeline from "../../components/timeline";
 import Positioning from "../../components/positioning";
 import ElementPatterns from "../../components/elementpatterns";
+import elements from "../../data/elements";
 
 export default function ElementPage() {
-  const element = {
-    name: "Local Pack",
-    shortname: "localpack",
-    type: "feature",
-    engine: "G",
-    presence: [2000, 2001, 2002, 2003, 2010],
-    patterns: [],
-    evolution: ["2009.png", "2013.png", "2019.png"],
-    positioning: true,
-  };
-
+  var element = elements.element;
   return (
     <div>
       <Head>
@@ -49,7 +40,7 @@ export default function ElementPage() {
               engine={element.engine}
             />
             <div className="sectiontitle mt-4">Design Patterns</div>
-            <ElementPatterns />
+            <ElementPatterns elm_patterns={element.patterns} />
           </div>
         </div>
       </div>
