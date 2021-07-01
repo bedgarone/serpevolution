@@ -1,7 +1,7 @@
-export default function ElementTitle() {
+export default function ElementTitle({ title }) {
   return (
     <div className="elementtitlerow">
-      <div className="elementtitle">Local Pack</div>
+      <div className="elementtitle">{title}</div>
     </div>
   );
 }

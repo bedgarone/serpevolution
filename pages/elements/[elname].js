@@ -1,3 +1,5 @@
+import React, { useState, useEffect } from "react";
+
 import Head from "next/head";
 import Bluebar from "../../components/bluebar";
 import NavigBar from "../../components/navigbar";
@@ -9,8 +11,19 @@ import Positioning from "../../components/positioning";
 import ElementPatterns from "../../components/elementpatterns";
 import elements from "../../data/elements";
 
+import { useRouter } from "next/router";
+
 export default function ElementPage() {
-  var element = elements.element;
+  const router = useRouter();
+  const { elname } = router.query;
+  var element_temp = Object.entries(elements).find((object) => {
+    return object[0] == elname;
+  });
+  var element = elements.null;
+  if (element_temp !== undefined) {
+    element = element_temp[1];
+  }
+
   return (
     <div>
       <Head>
@@ -25,7 +38,7 @@ export default function ElementPage() {
       <Bluebar />
       <NavigBar />
       <div className="container mt-3">
-        <ElementTitle />
+        <ElementTitle title={element.name} />
         <YearLine present={element.presence} />
 
         <div className="row mt-4">
@@ -38,6 +51,7 @@ export default function ElementPage() {
             <Positioning
               shortname={element.shortname}
               engine={element.engine}
+              available={element.positioning}
             />
             <div className="sectiontitle mt-4">Design Patterns</div>
             <ElementPatterns elm_patterns={element.patterns} />
