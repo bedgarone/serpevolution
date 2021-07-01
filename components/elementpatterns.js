@@ -1,7 +1,7 @@
 import patterns from "../data/patterns";
 
 export default function ElementPatterns({ elm_patterns }) {
-  if (elm_patterns == []) {
+  if (!elm_patterns.length) {
     return <p>There are no patterns applied to this element.</p>;
   } else {
     return (

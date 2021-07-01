@@ -115,6 +115,10 @@ body {
   opacity: 50%;
 }
 
+.positioning.result {
+  margin-top: 10px;
+}
+
 .centered-containter {
   display: flex;
   flex-direction: column;
