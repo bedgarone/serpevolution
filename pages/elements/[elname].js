@@ -13,6 +13,23 @@ import elements from "../../data/elements";
 
 import { useRouter } from "next/router";
 
+export async function getStaticProps(context) {
+  return {
+    props: {}, // will be passed to the page component as props
+  };
+}
+
+export async function getStaticPaths() {
+  const paths = Object.entries(elements).map((elm) => {
+    return { params: { elname: elm[0] } };
+  });
+  console.log(paths);
+  return {
+    paths,
+    fallback: false, // return 404 when inexistent
+  };
+}
+
 export default function ElementPage() {
   const router = useRouter();
   const { elname } = router.query;
@@ -20,6 +37,7 @@ export default function ElementPage() {
     return object[0] == elname;
   });
   var element = elements.null;
+  //investigate and probabily change to getStaticProps
   if (element_temp !== undefined) {
     element = element_temp[1];
   }
