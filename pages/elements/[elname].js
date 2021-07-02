@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 import Head from "next/head";
 import Bluebar from "../../components/bluebar";
@@ -9,6 +9,7 @@ import YearLine from "../../components/yearline";
 import Timeline from "../../components/timeline";
 import Positioning from "../../components/positioning";
 import ElementPatterns from "../../components/elementpatterns";
+import CodeIdentifiers from "../../components/codeidentifiers";
 import elements, { bing } from "../../data/elements"; // elements - google elements, bing - bing elements
 
 import { useRouter } from "next/router";
@@ -48,6 +49,17 @@ export default function ElementPage({ element_google, element_bing }) {
   const [element, setElement] = useState(
     element_google ? element_google : element_bing
   );
+  const [engine, setEngine] = useState(element_google ? "G" : "B");
+
+  useEffect(() => {
+    console.log(engine);
+    engine == "G" ? setElement(element_google) : setElement(element_bing);
+  }, [engine]);
+
+  const changeEngine = () => {
+    engine == "G" ? setEngine("B") : setEngine("G");
+  };
+
   //const router = useRouter();
   //const { elname } = router.query;
   // var element_temp = Object.entries(elements).find((object) => {
@@ -74,6 +86,19 @@ export default function ElementPage({ element_google, element_bing }) {
       <NavigBar />
       <div className="container mt-3">
         <ElementTitle title={element.name} />
+
+        <div className="d-flex flex-row justify-content-center">
+          <button
+            onClick={changeEngine}
+            type="button"
+            className="drive-btn btn btn-light"
+            disabled={element_google && element_bing ? false : true}
+          >
+            {element_google && element_bing ? "Change to" : "Exclusive to"}{" "}
+            {engine == "G" ? "Bing" : "Google"}
+          </button>
+        </div>
+
         <YearLine present={element.presence} />
 
         <div className="row mt-4">
@@ -88,6 +113,8 @@ export default function ElementPage({ element_google, element_bing }) {
               engine={element.engine}
               available={element.positioning}
             />
+            <div className="sectiontitle mt-4">HTML Identifiers</div>
+            <CodeIdentifiers identifiers={element.identifiers} />
             <div className="sectiontitle mt-4">Design Patterns</div>
             <ElementPatterns elm_patterns={element.patterns} />
           </div>

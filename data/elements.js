@@ -8,6 +8,7 @@ const elements = {
     evolution: [],
     patterns: [],
     positioning: false,
+    identifiers: [],
   },
 
   covidpanel: {
@@ -19,6 +20,7 @@ const elements = {
     evolution: ["202003.png", "202010.png"],
     patterns: ["categ"],
     positioning: true,
+    identifiers: [["#Yf1RJc", "2020"]],
   },
 
   directanswer: {
@@ -30,6 +32,10 @@ const elements = {
     evolution: ["2018.png", "2020.png"],
     patterns: ["bread", "thumb"],
     positioning: true,
+    identifiers: [
+      [".kp-blk.EyBRub.fm06If", "2019, 2020"],
+      ["#res .N6Sb2c.i29hTd", "2018-2020"],
+    ],
   },
 
   categoryhierarchy: {
@@ -41,6 +47,7 @@ const elements = {
     evolution: ["2003.png"],
     patterns: ["bread", "categ"],
     positioning: false,
+    identifiers: [["p.e", "2003, 2004"]],
   },
 
   textualads: {
@@ -80,6 +87,15 @@ const elements = {
     ],
     patterns: [],
     positioning: true,
+    identifiers: [
+      ["#tads", "2008, 2010, 2012-2020"],
+      ["#tpa1", "2002-2004, 2006"],
+      ["#tpa2", "2002, 2003, 2006"],
+      ["#taw1", "2002-2004"],
+      ['td[bgcolor="#FFF5F6"]', "2000, 2002-2004"],
+      ['td[bgcolor="#D4F0FC"]', "2000"],
+      ['td[bgcolor="#D7FFD7"]', "2000"],
+    ],
   },
 
   topstories: {
@@ -103,6 +119,12 @@ const elements = {
     evolution: ["2004.png", "2006.png", "2012.png", "2014.png", "2020.png"],
     patterns: ["carousel", "cards", "news", "thumb"],
     positioning: true,
+    identifiers: [
+      ["g-scrolling-carousel.F8yfEe", "2020"],
+      [".g > div > table.ts", "2011-2019"],
+      ["#newsbox", "2011"],
+      ["p.e", "2003, 2004, 2006"],
+    ],
   },
 
   fsnippets: {
@@ -114,6 +136,12 @@ const elements = {
     evolution: ["2016.png", "201705.png", "201707.png", "2018.png", "2020.png"],
     patterns: ["carousel", "thumb"],
     positioning: true,
+    identifiers: [
+      ["#res .NFQFxe.oHglmf", "2017-2020"],
+      ["#knocube", "2016, 2018"],
+      ["#res .hp-xpdbox", "2016-2018"],
+      [".slk", "2008, 2009, 2012-2017, 2019"],
+    ],
   },
 
   carouselgrid: {
@@ -125,6 +153,7 @@ const elements = {
     evolution: ["2016.png", "201808.png", "201812.png"],
     patterns: ["bread", "carousel", "cards", "thumb", "grid"],
     positioning: true,
+    identifiers: [[".vsQKGc", "2016-2018, 2020"]],
   },
 
   shoppingads: {
@@ -136,6 +165,10 @@ const elements = {
     evolution: ["2013.png", "2018.png", "2019.png", "2020.png"],
     patterns: ["carousel", "cards", "thumb"],
     positioning: true,
+    identifiers: [
+      [".DALGre", "2020"],
+      ["#rhs_block .ts", "2011, 2013, 2015-2019"],
+    ],
   },
 
   carousel: {
@@ -147,6 +180,7 @@ const elements = {
     evolution: ["2015.png", "2016.png", "2017.png"],
     patterns: ["bread", "carousel", "cards", "thumb"],
     positioning: true,
+    identifiers: [[".klbar", "2015-2018"]],
   },
 
   localpack: {
@@ -158,6 +192,12 @@ const elements = {
     evolution: ["2009.png", "2013.png", "2019.png"],
     patterns: [],
     positioning: true,
+    identifiers: [
+      [".LnbJhc", "2019, 2020"],
+      ["#NzwoZe", "2019"],
+      ["#imagebox_bigimages", "2014-2019"],
+      ["#imagebox", "2010, 2011"],
+    ],
   },
 
   relatedsearches: {
@@ -188,6 +228,10 @@ const elements = {
     ],
     patterns: [],
     positioning: true,
+    identifiers: [
+      ["#bres > #bzMwOe", "2020"],
+      ["#brs", "2008, 2009, 2011, 2014-2020"],
+    ],
   },
 
   videopack: {
@@ -206,6 +250,11 @@ const elements = {
     ],
     patterns: ["carousel", "cards", "thumb"],
     positioning: true,
+    identifiers: [
+      [".COEoid", "2015-2020"],
+      ["#videobox", "2011"],
+      [".g.videobox", "2010, 2011"],
+    ],
   },
 
   kpanel: {
@@ -217,6 +266,13 @@ const elements = {
     evolution: ["2014.png", "2015.png", "2017.png", "2019.png", "2020.png"],
     patterns: ["mtabs", "carousel", "cards", "thumb", "grid"],
     positioning: true,
+    identifiers: [
+      [".knowledge-panel", "2016-2020"],
+      [".kp-wholepage", "2020"],
+      [".kp-blk", "2014-2020"],
+      [".kno-kp", "2014-2020"],
+      ["#rhs_block .hp-xpdbox", "2014-2017, 2019"],
+    ],
   },
 
   twitterpack: {
@@ -228,6 +284,11 @@ const elements = {
     evolution: ["2015.png", "2017.png", "2019.png", "202007.png", "202012.png"],
     patterns: ["carousel", "cards", "thumb"],
     positioning: true,
+    identifiers: [
+      ["g-scrolling-carousel.rQgnxe", "2017-2020"],
+      ["g-scrolling-carousel._mip", "2017"],
+      ["g-flippy-carousel._nGh", "2015, 2016"],
+    ],
   },
 
   enriched: {
@@ -251,6 +312,11 @@ const elements = {
     evolution: ["2008.png", "2013.png", "2015.png", "2020.png"],
     patterns: ["bread", "thumb"],
     positioning: true,
+    identifiers: [
+      [".nrgt", "2015-2020"],
+      ["td div.sld", "2012-2014"],
+      ["div.std table.slk", "2008, 2009"],
+    ],
   },
 
   pplalsoask: {
@@ -262,6 +328,7 @@ const elements = {
     evolution: ["2014.png", "2019.png", "202006.png", "202007.png"],
     patterns: ["accord"],
     positioning: true,
+    identifiers: [[".kp-blk.cUnQKe", "2014"]],
   },
 
   recipes: {
@@ -273,6 +340,7 @@ const elements = {
     evolution: ["2020.png"],
     patterns: ["cards", "disclose", "thumb"],
     positioning: true,
+    identifiers: [[".MmzWWe", "2020"]],
   },
 
   imagepack: {
@@ -302,6 +370,12 @@ const elements = {
     ],
     patterns: ["carousel", "thumb", "grid"],
     positioning: true,
+    identifiers: [
+      [".LnbJhc", "2019, 2020"],
+      ["#NzwoZe", "2019"],
+      ["#imagebox_bigimages", "2014-2019"],
+      ["#imagebox", "2010, 2011"],
+    ],
   },
 
   regular: {
@@ -341,6 +415,10 @@ const elements = {
     ],
     patterns: ["bread"],
     positioning: true,
+    identifiers: [
+      [".g", "2003-2020"],
+      ["p", "2000-2002"],
+    ],
   },
 };
 
@@ -371,6 +449,13 @@ export const bing = {
     ],
     patterns: [],
     positioning: true,
+    identifiers: [
+      [".b_ad", "2014, 2015, 2017-2020"],
+      [".b_adBottom", "2015, 2017-2020"],
+      [".sb_adsWv2", "2010, 2011, 2013, 2014"],
+      [".sb_adsW", "2010"],
+      [".sb_adsW2", "2010"],
+    ],
   },
 
   topstories: {
@@ -389,6 +474,11 @@ export const bing = {
     ],
     patterns: ["cards", "news", "thumb"],
     positioning: true,
+    identifiers: [
+      [".ans_nws", "2020"],
+      ["#ans_news", "2017"],
+      [".ans_bd", "2010, 2014"],
+    ],
   },
 
   fsnippets: {
@@ -400,6 +490,7 @@ export const bing = {
     evolution: ["2017.png", "202004.png", "202010.png"],
     patterns: ["carousel", "thumb"],
     positioning: true,
+    identifiers: [["#d_ans", "2017, 2018, 2020"]],
   },
 
   carousel: {
@@ -411,6 +502,7 @@ export const bing = {
     evolution: ["2017.png", "2020.png"],
     patterns: ["carousel", "cards", "thumb"],
     positioning: false,
+    identifiers: [["#ent-car-exp", "2017,2020"]],
   },
 
   localpack: {
@@ -422,6 +514,10 @@ export const bing = {
     evolution: ["2014.png", "2020.png"],
     patterns: ["thumb"],
     positioning: true,
+    identifiers: [
+      ["#lMapContainer", "2020"],
+      ["#maps_container", "2014"],
+    ],
   },
 
   relatedsearches: {
@@ -452,6 +548,11 @@ export const bing = {
     ],
     patterns: [],
     positioning: true,
+    identifiers: [
+      [".b_rs", "2014-2020"],
+      [".sb_title.rrrs_ttl", "2012-2014"],
+      ["#sw_rel", "2010"],
+    ],
   },
 
   videopack: {
@@ -463,6 +564,10 @@ export const bing = {
     evolution: ["2015.png", "2019.png", "2020.png"],
     patterns: ["carousel", "cards", "thumb"],
     positioning: true,
+    identifiers: [
+      ["#serpvidans", "2020"],
+      ["#vidans2", "2014-2017, 2019, 2020"],
+    ],
   },
 
   kpanel: {
@@ -482,6 +587,7 @@ export const bing = {
     ],
     patterns: ["thumb", "grid"],
     positioning: true,
+    identifiers: [["#b_context > li.b_ans > .b_entityTP", "2015-2020"]],
   },
 
   twitterpack: {
@@ -493,6 +599,7 @@ export const bing = {
     evolution: ["2019.png"],
     patterns: ["cards"],
     positioning: false,
+    identifiers: [[".twcwr", "2019"]],
   },
 
   searchrefinement: {
@@ -504,6 +611,7 @@ export const bing = {
     evolution: ["2018.png", "2020.png"],
     patterns: [],
     positioning: true,
+    identifiers: [[".b_cnvsug", "2018, 2020"]],
   },
 
   enriched: {
@@ -523,6 +631,12 @@ export const bing = {
     ],
     patterns: ["mtabs", "cards", "thumb"],
     positioning: true,
+    identifiers: [
+      ["#rpd", "2020"],
+      [".b_vlist2col.b_deep", "2014-2015, 2017-2020"],
+      [".b_overhangR", "2018"],
+      [".sb_vdl", "2010-2014"],
+    ],
   },
 
   pplalsoask: {
@@ -534,6 +648,7 @@ export const bing = {
     evolution: ["2020.png"],
     patterns: ["accord"],
     positioning: true,
+    identifiers: [[".rqnaContainerwithfeedback", "2020"]],
   },
 
   imagepack: {
@@ -545,6 +660,10 @@ export const bing = {
     evolution: ["2015.png", "2017.png", "2019.png", "202002.png", "202006.png"],
     patterns: ["carousel", "thumb", "grid"],
     positioning: true,
+    identifiers: [
+      [".b_rich > .iaplanner", "2018-2020"],
+      [".b_rich > #iaplanner", "2015-2017"],
+    ],
   },
 
   regular: {
@@ -575,6 +694,11 @@ export const bing = {
     ],
     patterns: [],
     positioning: true,
+    identifiers: [
+      ['[class="b_algo"]', "2014-2020"],
+      ['#results [class="sa_wr"]', "2010-2014"],
+      ['#results [class="sa_cc"]', "2010-2014"],
+    ],
   },
 
   traveldestinations: {
@@ -586,6 +710,7 @@ export const bing = {
     evolution: ["202004.png", "202005.png"],
     patterns: ["cards", "thumb"],
     positioning: true,
+    identifiers: [["#destCar", "2020"]],
   },
 
   categoriesbar: {
@@ -597,6 +722,7 @@ export const bing = {
     evolution: ["2020051.png", "2020052.png", "202011.png"],
     patterns: ["categ"],
     positioning: true,
+    identifiers: [[".ent-dtab-content", "2020"]],
   },
 };
 
