@@ -1,7 +1,7 @@
-export default function ElementTitle({ title }) {
+export default function ElementTitle({ title, type }) {
   return (
     <div className="elementtitlerow">
-      <div className="elementtitle">{title}</div>
+      <div className={"elementtitle " + type}>{title}</div>
     </div>
   );
 }

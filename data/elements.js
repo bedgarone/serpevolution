@@ -328,7 +328,7 @@ const elements = {
     evolution: ["2014.png", "2019.png", "202006.png", "202007.png"],
     patterns: ["accord"],
     positioning: true,
-    identifiers: [[".kp-blk.cUnQKe", "2014"]],
+    identifiers: [[".kp-blk.cUnQKe", "2014, 2016-2020"]],
   },
 
   recipes: {

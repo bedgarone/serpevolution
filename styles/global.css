@@ -76,18 +76,35 @@ body {
 }
 
 .elementtitle {
-  border-left: 10px solid #34a853;
-  border-right: 10px solid #34a853;
   padding: 0 10px 0 10px;
   font-weight: 700;
   font-size: 1.3em;
   line-height: 1em;
 }
 
+.elementtitle.organic {
+  border-left: 10px solid #0956bb;
+  border-right: 10px solid #0956bb;
+}
+
+.elementtitle.sponsored {
+  border-left: 10px solid #fff132;
+  border-right: 10px solid #fff132;
+}
+
+.elementtitle.feature {
+  border-left: 10px solid #7fd656;
+  border-right: 10px solid #7fd656;
+}
+
 .elementtitlerow {
   display: flex;
   justify-content: center;
-  margin-bottom: 0.5em;
+  margin-bottom: 1em;
+}
+
+.timeline-image {
+  margin-bottom: 15px;
 }
 
 .timeline-image > img {
@@ -174,4 +191,12 @@ body {
 
 .id-years {
   font-weight: 200;
+}
+
+.element-engine {
+  margin-bottom: 1rem;
+}
+
+.element-engine img {
+  height: 2rem;
 }

@@ -84,18 +84,23 @@ export default function ElementPage({ element_google, element_bing }) {
 
       <Bluebar />
       <NavigBar />
-      <div className="container mt-3">
-        <ElementTitle title={element.name} />
-
-        <div className="d-flex flex-row justify-content-center">
+      <div className="container mt-3 mb-3">
+        <div className="d-flex flex-column align-items-center">
+          <div className="element-engine">
+            <img
+              src={"../assets/" + (engine == "G" ? "google" : "bing") + ".png"}
+            />
+          </div>
+          <ElementTitle title={element.name} type={element.type} />
           <button
             onClick={changeEngine}
             type="button"
-            className="drive-btn btn btn-light"
+            className="btn btn-light mb-2"
             disabled={element_google && element_bing ? false : true}
           >
-            {element_google && element_bing ? "Change to" : "Exclusive to"}{" "}
-            {engine == "G" ? "Bing" : "Google"}
+            {element_google && element_bing
+              ? "Change engine"
+              : "Exclusive element"}
           </button>
         </div>
 
