@@ -184,7 +184,7 @@ const elements = {
   },
 
   localpack: {
-    name: "Local Pacj",
+    name: "Local Pack",
     shortname: "localpack",
     type: "feature",
     engine: "G",
@@ -605,7 +605,7 @@ export const bing = {
   searchrefinement: {
     name: "Search Refinement",
     shortname: "searchrefinement",
-    type: "",
+    type: "feature",
     engine: "B",
     presence: ["2018", "2020"],
     evolution: ["2018.png", "2020.png"],

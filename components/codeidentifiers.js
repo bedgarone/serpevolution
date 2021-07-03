@@ -3,7 +3,7 @@ export default function CodeIdentifiers({ identifiers }) {
     return <p>There are no code identifiers for this element.</p>;
   } else {
     return (
-      <div className="ids-container">
+      <div className="wrap-container">
         {identifiers.map((ident, key) => {
           return (
             <div className="id-box" key={key}>

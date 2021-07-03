@@ -3,7 +3,6 @@ import React, { useState, useEffect } from "react";
 import Head from "next/head";
 import Bluebar from "../../components/bluebar";
 import NavigBar from "../../components/navigbar";
-import ModuleTabs from "../../components/moduletabs";
 import ElementTitle from "../../components/elementtitle";
 import YearLine from "../../components/yearline";
 import Timeline from "../../components/timeline";
@@ -11,8 +10,6 @@ import Positioning from "../../components/positioning";
 import ElementPatterns from "../../components/elementpatterns";
 import CodeIdentifiers from "../../components/codeidentifiers";
 import elements, { bing } from "../../data/elements"; // elements - google elements, bing - bing elements
-
-import { useRouter } from "next/router";
 
 export async function getStaticProps(context) {
   const elname = context.params.elname;
