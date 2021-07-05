@@ -202,6 +202,19 @@ body {
   height: 2rem;
 }
 
+.element-engine.year {
+  margin-bottom: 0.4rem;
+  margin-top: 1rem;
+}
+
+.element-introduction {
+  background-color: rgb(168, 250, 45);
+  font-size: 0.7em;
+  padding: 0 4px;
+  border-radius: 4px;
+  margin-right: 4px;
+}
+
 a {
   text-decoration: none;
 }
@@ -210,7 +223,7 @@ a {
   display: flex;
   border-radius: 4px;
   padding: 2px 4px 2px 4px;
-  margin: 0 8px 8px 0;
+  margin: 0 20px 20px 0;
   padding: 0em;
   cursor: pointer;
   background-color: rgb(233, 233, 233);
@@ -218,7 +231,7 @@ a {
   transition: 0.2s;
 }
 .element-box:hover {
-  background-color: rgb(218, 218, 218);
+  background-color: rgb(243, 243, 243);
 }
 
 .element-box:hover img {
@@ -249,6 +262,12 @@ a {
 .element-name {
   font-weight: 700;
   padding: 0 10px 0 10px;
+}
+
+.actual-year {
+  font-size: 2em;
+  font-weight: 200;
+  margin: 0 40px;
 }
 
 @media only screen and (max-width: 600px) {

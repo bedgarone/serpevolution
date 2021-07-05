@@ -10,8 +10,8 @@ export default function ElementBanners({ elements }) {
           "/" +
           elm[1].evolution[elm[1].evolution.length - 1];
         return (
-          <a href={"./elements/" + elm[1].shortname}>
-            <div className={"element-box " + elm[1].type} key={key}>
+          <a href={"./elements/" + elm[1].shortname} key={key}>
+            <div className={"element-box " + elm[1].type}>
               <div className="element-name">{elm[1].name}</div>
               <img src={elm_image} />
             </div>

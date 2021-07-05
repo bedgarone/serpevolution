@@ -47,9 +47,9 @@ export default function ElementPage({ element_google, element_bing }) {
     element_google ? element_google : element_bing
   );
   const [engine, setEngine] = useState(element_google ? "G" : "B");
-
+  console.log(element_google);
+  console.log(elements);
   useEffect(() => {
-    console.log(engine);
     engine == "G" ? setElement(element_google) : setElement(element_bing);
   }, [engine]);
 
@@ -100,7 +100,7 @@ export default function ElementPage({ element_google, element_bing }) {
               : "Exclusive element"}
           </button>
         </div>
-
+        <div className="sectiontitle">Presence timeline</div>
         <YearLine present={element.presence} />
 
         <div className="row mt-4">

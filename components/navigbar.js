@@ -26,7 +26,10 @@ const NavigBar = (props) => {
           <Collapse isOpen={isOpen} navbar>
             <Nav className="mr-auto" navbar>
               <NavItem>
-                <NavLink className="nav-selected" href="/components/">
+                <NavLink
+                  className="nav-selected"
+                  href="/serpevolution/elements"
+                >
                   Elements
                 </NavLink>
               </NavItem>

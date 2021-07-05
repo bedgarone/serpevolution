@@ -7,22 +7,22 @@ const YearLine = ({ present }) => {
   }
   return (
     <>
-      <div className="sectiontitle">Presence timeline</div>
       <div className="d-flex yearline">
         {years.map((element, key) => {
           return (
-            <button
-              className={
-                "btn " +
-                (present.find((year) => year == element)
-                  ? "btn-secondary"
-                  : "btn-link") +
-                " yearbtn"
-              }
-              key={key}
-            >
-              {element}
-            </button>
+            <a href={"/serpevolution/timeline/" + element} key={key}>
+              <button
+                className={
+                  "btn " +
+                  (present.find((year) => year == element)
+                    ? "btn-secondary"
+                    : "btn-link") +
+                  " yearbtn"
+                }
+              >
+                {element}
+              </button>
+            </a>
           );
         })}
       </div>
