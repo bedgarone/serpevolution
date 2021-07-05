@@ -13,6 +13,10 @@ const NavigBar = ({ pagename }) => {
     ["Elements", "/serpevolution/elements"],
     ["Timeline", "/serpevolution/timeline"],
     ["Patterns", "/serpevolution/patterns"],
+    ["Layout", "/"],
+    ["Overall Design", "/"],
+    ["Identity & Search Statistics", "/"],
+    ["Navigation & User Inputs", "/"],
   ];
   const [isOpen, setIsOpen] = useState(false);
 
