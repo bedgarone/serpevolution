@@ -3,15 +3,15 @@ import React, { useState, useEffect } from "react";
 import Head from "next/head";
 import Bluebar from "../../components/bluebar";
 import NavigBar from "../../components/navigbar";
-import YearLine from "../../components/yearline";
 import ElementBannersSmall from "../../components/elementbannerssmall";
 
 import elements, { bing } from "../../data/elements"; // elements - google elements, bing - bing elements
+import patterns from "../../data/patterns";
 
-export function isMember(array, year) {
+export function isMember(array, pattern) {
   var member = false;
-  for (let i = 0; i < array.length; i++) {
-    if (array[i] == year.toString()) {
+  for (let i = 0; i < pattern.length; i++) {
+    if (array[i] == pattern) {
       member = true;
       break;
     }
@@ -20,29 +20,30 @@ export function isMember(array, year) {
 }
 
 export async function getStaticProps(context) {
-  const year = context.params.year;
+  const pattern = context.params.pattern;
   var elements_google = Object.entries(elements).filter((object) => {
-    return isMember(object[1].presence, year);
+    return isMember(object[1].patterns, pattern);
   });
   var elements_bing = Object.entries(bing).filter((object) => {
-    return isMember(object[1].presence, year);
+    return isMember(object[1].patterns, pattern);
   });
+
+  var pattern_obj = Object.entries(patterns).find((pat) => {
+    return pat[0] == pattern;
+  });
+
   return {
     props: {
       elements_google: elements_google ? elements_google : null,
       elements_bing: elements_bing ? elements_bing : null,
-      year,
+      pattern_obj,
     }, // will be passed to the page component as props
   };
 }
 
 export async function getStaticPaths() {
-  let years = [];
-  for (let i = 2000; i < 2021; i++) {
-    years.push(i);
-  }
-  const paths = years.map((yr) => {
-    return { params: { year: yr.toString() } };
+  const paths = Object.entries(patterns).map((pat) => {
+    return { params: { pattern: pat[0] } };
   });
   return {
     paths,
@@ -50,39 +51,11 @@ export async function getStaticPaths() {
   };
 }
 
-export default function YearPage({ elements_google, elements_bing, year }) {
-  let years = [];
-  for (let i = 2000; i < 2021; i++) {
-    years.push(i);
-  }
-
-  const prevYear = year == 2000 ? null : parseInt(year) - 1;
-  const nextYear = year == 2020 ? null : parseInt(year) + 1;
-
-  function prevYearLink() {
-    if (year == 2000) {
-      return null;
-    } else {
-      return (
-        <a href={"./" + prevYear}>
-          <div>&#8592; {prevYear}</div>
-        </a>
-      );
-    }
-  }
-
-  function nextYearLink() {
-    if (year == 2020) {
-      return null;
-    } else {
-      return (
-        <a href={"./" + nextYear}>
-          <div>{nextYear} &#8594;</div>
-        </a>
-      );
-    }
-  }
-
+export default function PatternPage({
+  elements_google,
+  elements_bing,
+  pattern_obj,
+}) {
   return (
     <div>
       <Head>
@@ -95,15 +68,17 @@ export default function YearPage({ elements_google, elements_bing, year }) {
       </Head>
 
       <Bluebar />
-      <NavigBar pagename="Timeline" />
+      <NavigBar pagename="Patterns" />
 
       <div className="container mt-3 mb-3">
         <div className="col-12">
-          <YearLine present={years} />
-          <div className="year-page-title d-flex flex-row justify-content-center align-items-center mt-3">
-            {prevYearLink()}
-            <div className="actual-year">{year}</div>
-            {nextYearLink()}
+          <div className="row">
+            <div className="col-12 d-flex flex-column justify-content-center align-items-center">
+              <div className="pattern-title">{pattern_obj[1].name}</div>
+              <div className="pattern-description">
+                {pattern_obj[1].description}
+              </div>
+            </div>
           </div>
           <div className="row">
             <div className="col-12 col-lg-6">
@@ -113,7 +88,7 @@ export default function YearPage({ elements_google, elements_bing, year }) {
                 </div>
               </div>
               <div className="sectiontitle">Elements</div>
-              <ElementBannersSmall elements={elements_google} year={year} />
+              <ElementBannersSmall elements={elements_google} />
             </div>
             <div className="col-12 col-lg-6">
               <div className="d-flex flex-column align-items-center">
@@ -122,7 +97,22 @@ export default function YearPage({ elements_google, elements_bing, year }) {
                 </div>
               </div>
               <div className="sectiontitle">Elements</div>
-              <ElementBannersSmall elements={elements_bing} year={year} />
+              <ElementBannersSmall elements={elements_bing} />
+            </div>
+          </div>
+          <div className="row">
+            <div className="col-12">
+              <div className="sectiontitle">Gallery</div>
+              <div className="pattern-gallery">
+                {pattern_obj[1].images.map((img) => {
+                  var url =
+                    "../assets/patterns/" +
+                    pattern_obj[1].shortname +
+                    "/" +
+                    img;
+                  return <img src={url} />;
+                })}
+              </div>
             </div>
           </div>
         </div>

@@ -40,6 +40,7 @@ body {
 
 .nav-selected {
   border-bottom: 3px solid #4285f4;
+  font-weight: 700;
 }
 
 .nav-selected.nav-link {
@@ -270,9 +271,31 @@ a {
   margin: 0 40px;
 }
 
+.pattern-gallery > img {
+  width: 15rem;
+  transition: 0.3s;
+}
+
+.pattern-gallery > img:hover {
+  width: 30rem;
+}
+
+.pattern-title {
+  font-weight: 700;
+  font-size: 1.5em;
+}
+
+.pattern-description {
+  font-weight: 300;
+  margin: 0.5em 0 0.5em 0;
+}
+
 @media only screen and (max-width: 600px) {
   .timeline-image {
     width: 300px;
+  }
+  .pattern-gallery > img {
+    width: 100%;
   }
 }
 

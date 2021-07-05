@@ -47,8 +47,6 @@ export default function ElementPage({ element_google, element_bing }) {
     element_google ? element_google : element_bing
   );
   const [engine, setEngine] = useState(element_google ? "G" : "B");
-  console.log(element_google);
-  console.log(elements);
   useEffect(() => {
     engine == "G" ? setElement(element_google) : setElement(element_bing);
   }, [engine]);
@@ -80,7 +78,7 @@ export default function ElementPage({ element_google, element_bing }) {
       </Head>
 
       <Bluebar />
-      <NavigBar />
+      <NavigBar pagename="Elements" />
       <div className="container mt-3 mb-3">
         <div className="d-flex flex-column align-items-center">
           <div className="element-engine">

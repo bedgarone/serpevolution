@@ -1,4 +1,7 @@
 export default function ElementBannersSmall({ elements, year }) {
+  if (year == undefined) {
+    year == 1000; //never will match First Time
+  }
   return (
     <div className="wrap-container">
       {elements.map((elm, key) => {

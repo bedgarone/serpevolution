@@ -42,7 +42,7 @@ export default function Elements() {
       </Head>
 
       <Bluebar />
-      <NavigBar />
+      <NavigBar pagename="Elements" />
       <div className="container mt-3 mb-3">
         <div className="col-12">
           <div className="sectiontitle">Organic Results</div>

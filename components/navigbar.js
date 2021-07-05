@@ -6,14 +6,14 @@ import {
   Nav,
   NavItem,
   NavLink,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
-  NavbarText,
 } from "reactstrap";
 
-const NavigBar = (props) => {
+const NavigBar = ({ pagename }) => {
+  const pages = [
+    ["Elements", "/serpevolution/elements"],
+    ["Timeline", "/serpevolution/timeline"],
+    ["Patterns", "/serpevolution/patterns"],
+  ];
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => setIsOpen(!isOpen);
@@ -25,20 +25,18 @@ const NavigBar = (props) => {
           <NavbarToggler onClick={toggle} />
           <Collapse isOpen={isOpen} navbar>
             <Nav className="mr-auto" navbar>
-              <NavItem>
-                <NavLink
-                  className="nav-selected"
-                  href="/serpevolution/elements"
-                >
-                  Elements
-                </NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="/components/">Design</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="/components/">Layout</NavLink>
-              </NavItem>
+              {pages.map((pag) => {
+                return (
+                  <NavItem>
+                    <NavLink
+                      className={pagename == pag[0] ? "nav-selected" : ""}
+                      href={pag[1]}
+                    >
+                      {pag[0]}
+                    </NavLink>
+                  </NavItem>
+                );
+              })}
             </Nav>
           </Collapse>
         </div>
