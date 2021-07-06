@@ -23,6 +23,7 @@ export default function Patterns() {
       <NavigBar pagename="Elements" />
       <div className="container mt-3 mb-3">
         <div className="col-12">
+          <div className="main-title text-center">Design Patterns</div>
           <div className="sectiontitle">Organic Results</div>
           <PatternsList patterns={valid_patterns} />
         </div>

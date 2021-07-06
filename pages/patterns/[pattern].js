@@ -73,6 +73,7 @@ export default function PatternPage({
         <div className="col-12">
           <div className="row">
             <div className="col-12 d-flex flex-column justify-content-center align-items-center">
+              <div className="main-title">Design Patterns</div>
               <div className="pattern-title">{pattern_obj[1].name}</div>
               <div className="pattern-description">
                 {pattern_obj[1].description}

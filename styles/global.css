@@ -114,6 +114,10 @@ body {
   margin-top: 30px;
 }
 
+.timeline-image.interface > img {
+  max-height: 100%;
+}
+
 .timeline-year {
   position: absolute;
 }
@@ -280,9 +284,15 @@ a {
   width: 30rem;
 }
 
-.pattern-title {
+.main-title {
   font-weight: 700;
+  font-size: 1.2em;
+}
+
+.pattern-title {
+  font-weight: 200;
   font-size: 1.5em;
+  margin: 10px 0;
 }
 
 .pattern-description {

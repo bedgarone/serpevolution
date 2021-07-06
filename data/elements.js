@@ -361,6 +361,7 @@ const elements = {
       "2020",
     ],
     evolution: [
+      "2006.png",
       "2010.png",
       "2014.png",
       "2017.png",

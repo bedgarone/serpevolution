@@ -5,7 +5,7 @@ import Bluebar from "../../components/bluebar";
 import NavigBar from "../../components/navigbar";
 import ElementTitle from "../../components/elementtitle";
 import YearLine from "../../components/yearline";
-import Timeline from "../../components/timeline";
+import ElementTimeline from "../../components/elementtimeline";
 import Positioning from "../../components/positioning";
 import ElementPatterns from "../../components/elementpatterns";
 import CodeIdentifiers from "../../components/codeidentifiers";
@@ -104,7 +104,7 @@ export default function ElementPage({ element_google, element_bing }) {
         <div className="row mt-4">
           <div className="col-12 col-lg-6">
             <div className="sectiontitle">Evolution</div>
-            <Timeline serpelement={element} />
+            <ElementTimeline serpelement={element} />
           </div>
           <div className="col-12 col-lg-6">
             <div className="sectiontitle">Positioning</div>
