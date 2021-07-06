@@ -5,24 +5,26 @@ export default function ElementPatterns({ elm_patterns }) {
     return <p>There are no patterns applied to this element.</p>;
   } else {
     return (
-      <div className="d-flex flex-column">
+      <div className="d-flex flex-wrap">
         {elm_patterns.map((element, key) => {
           {
             var pat = Object.entries(patterns).find((object) => {
               return object[0] == element;
             });
           }
+          const css_image = "url(../" + pat[1].css_image + ")";
           return (
-            <div
-              className="applied-pattern d-flex"
-              style={{
-                backgroundImage: pat[1].css_image,
-                backgroundSize: "cover",
-              }}
-              key={key}
-            >
-              {pat[1].name}
-            </div>
+            <a href={"/serpevolution/patterns/" + pat[1].shortname} key={key}>
+              <div
+                className="applied-pattern d-flex"
+                style={{
+                  backgroundImage: css_image,
+                  backgroundSize: "cover",
+                }}
+              >
+                {pat[1].name}
+              </div>
+            </a>
           );
         })}
       </div>

@@ -10,7 +10,7 @@ import patterns from "../../data/patterns";
 
 export function isMember(array, pattern) {
   var member = false;
-  for (let i = 0; i < pattern.length; i++) {
+  for (let i = 0; i < pattern.length + 1; i++) {
     if (array[i] == pattern) {
       member = true;
       break;
@@ -27,7 +27,6 @@ export async function getStaticProps(context) {
   var elements_bing = Object.entries(bing).filter((object) => {
     return isMember(object[1].patterns, pattern);
   });
-
   var pattern_obj = Object.entries(patterns).find((pat) => {
     return pat[0] == pattern;
   });
@@ -101,16 +100,16 @@ export default function PatternPage({
             </div>
           </div>
           <div className="row">
-            <div className="col-12">
+            <div className="col-12 gallery">
               <div className="sectiontitle">Gallery</div>
               <div className="pattern-gallery">
-                {pattern_obj[1].images.map((img) => {
+                {pattern_obj[1].images.map((img, key) => {
                   var url =
                     "../assets/patterns/" +
                     pattern_obj[1].shortname +
                     "/" +
                     img;
-                  return <img src={url} />;
+                  return <img key={key} src={url} />;
                 })}
               </div>
             </div>

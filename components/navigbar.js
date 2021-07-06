@@ -13,7 +13,7 @@ const NavigBar = ({ pagename }) => {
     ["Elements", "/serpevolution/elements"],
     ["Timeline", "/serpevolution/timeline"],
     ["Patterns", "/serpevolution/patterns"],
-    ["Layout", "/"],
+    ["Layout", "/serpevolution/layout"],
     ["Overall Design", "/"],
     ["Identity & Search Statistics", "/"],
     ["Navigation & User Inputs", "/"],
@@ -29,9 +29,9 @@ const NavigBar = ({ pagename }) => {
           <NavbarToggler onClick={toggle} />
           <Collapse isOpen={isOpen} navbar>
             <Nav className="mr-auto" navbar>
-              {pages.map((pag) => {
+              {pages.map((pag, key) => {
                 return (
-                  <NavItem>
+                  <NavItem key={key}>
                     <NavLink
                       className={pagename == pag[0] ? "nav-selected" : ""}
                       href={pag[1]}
