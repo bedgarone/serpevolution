@@ -88,7 +88,11 @@ export default function PatternPage({
                 </div>
               </div>
               <div className="sectiontitle">Elements</div>
-              <ElementBannersSmall elements={elements_google} />
+              {elements_google.length == 0 ? (
+                "No elements found"
+              ) : (
+                <ElementBannersSmall elements={elements_google} />
+              )}
             </div>
             <div className="col-12 col-lg-6">
               <div className="d-flex flex-column align-items-center">
@@ -97,7 +101,11 @@ export default function PatternPage({
                 </div>
               </div>
               <div className="sectiontitle">Elements</div>
-              <ElementBannersSmall elements={elements_bing} />
+              {elements_bing.length == 0 ? (
+                "No elements found"
+              ) : (
+                <ElementBannersSmall elements={elements_bing} />
+              )}
             </div>
           </div>
           <div className="row">

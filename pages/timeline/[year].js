@@ -113,7 +113,11 @@ export default function YearPage({ elements_google, elements_bing, year }) {
                 </div>
               </div>
               <div className="sectiontitle">Elements</div>
-              <ElementBannersSmall elements={elements_google} year={year} />
+              {elements_google.length == 0 ? (
+                "No elements found"
+              ) : (
+                <ElementBannersSmall elements={elements_google} year={year} />
+              )}
             </div>
             <div className="col-12 col-lg-6">
               <div className="d-flex flex-column align-items-center">
@@ -122,7 +126,11 @@ export default function YearPage({ elements_google, elements_bing, year }) {
                 </div>
               </div>
               <div className="sectiontitle">Elements</div>
-              <ElementBannersSmall elements={elements_bing} year={year} />
+              {elements_bing.length == 0 ? (
+                "Not applicable"
+              ) : (
+                <ElementBannersSmall elements={elements_bing} year={year} />
+              )}
             </div>
           </div>
         </div>
