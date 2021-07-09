@@ -1,5 +1,4 @@
 export default function Timeline({ entries, path }) {
-  console.log(entries);
   return (
     <ul className="timeline centered-containter">
       {entries.map((element, key) => {

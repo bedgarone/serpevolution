@@ -20,7 +20,7 @@ export default function Patterns() {
       </Head>
 
       <Bluebar />
-      <NavigBar pagename="Elements" />
+      <NavigBar pagename="Patterns" />
       <div className="container mt-3 mb-3">
         <div className="col-12">
           <div className="main-title text-center">Design Patterns</div>

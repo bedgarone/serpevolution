@@ -35,11 +35,11 @@ export default function Layout() {
       <div className="container mt-3 mb-3">
         <div className="col-12">
           <div className="main-title text-center mb-3">
-            Overal Interface Layout
+            Overall Interface Layout
           </div>
           <div className="row">
             <div className="col-12 d-flex justify-content-center align-items-center flex-wrap">
-              {categories.map((cat) => {
+              {categories.map((cat, key) => {
                 return (
                   <div
                     className={
@@ -47,6 +47,7 @@ export default function Layout() {
                     }
                     style={{ backgroundColor: cat[1] }}
                     onClick={() => setCategory(cat[2])}
+                    key={key}
                   >
                     {cat[0]}
                   </div>

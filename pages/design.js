@@ -83,9 +83,9 @@ export default function Design() {
       <NavigBar pagename="Design" />
       <div className="container mt-3 mb-3">
         <div className="row">
-          <div className="main-title text-center">Design</div>
+          <div className="main-title text-center">Overall Interface Design</div>
           <div className="col-12 d-flex justify-content-center align-items-center flex-wrap mt-3 mb-2">
-            {categories.map((cat) => {
+            {categories.map((cat, key) => {
               return (
                 <div
                   className={
@@ -93,6 +93,7 @@ export default function Design() {
                   }
                   style={{ backgroundColor: cat[1] }}
                   onClick={() => setCategory(cat[2])}
+                  key={key}
                 >
                   {cat[0]}
                 </div>

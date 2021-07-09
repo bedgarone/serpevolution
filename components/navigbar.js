@@ -10,6 +10,7 @@ import {
 
 const NavigBar = ({ pagename }) => {
   const pages = [
+    ["Home", "/serpevolution"],
     ["Elements", "/serpevolution/elements"],
     ["Timeline", "/serpevolution/timeline"],
     ["Patterns", "/serpevolution/patterns"],

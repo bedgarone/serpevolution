@@ -51,6 +51,10 @@ body {
   color: #296ddb !important;
 }
 
+.navbar-light .navbar-nav .nav-link {
+  margin: 0 0.5em;
+}
+
 .yearbtn {
   border-radius: 30px;
   font-size: 0.8em;
@@ -333,12 +337,83 @@ a {
   margin-bottom: 5rem;
 }
 
+.index-image > img {
+  height: 100%;
+  object-fit: cover;
+  width: 12rem;
+  border-radius: 10px 0 0 10px;
+  transition: 0.3s;
+}
+
+.index-title {
+  margin-left: 15px;
+  font-weight: 700;
+  font-size: 1.3em;
+}
+
+.index-description {
+  width: auto;
+  margin-left: 15px;
+  font-weight: 300;
+  font-size: 0.9em;
+}
+
+.index-item {
+  cursor: pointer;
+  margin: 0 15px 15px 0;
+  width: 100%;
+}
+
+.index-item:hover > .index-image > img {
+  width: 12.3rem;
+}
+
+.index-item:hover {
+  color: rgb(78, 78, 78);
+}
+
+.index-item:hover > img {
+  color: rgb(78, 78, 78);
+}
+
+.index-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.index-subtitle {
+  margin-left: 15px;
+  font-size: 0.9em;
+  color: #4285f4;
+}
+
+.intro-in-parag {
+  width: max-content;
+  line-height: 2;
+  margin-left: 5px;
+  margin-right: 0;
+}
+
 @media only screen and (max-width: 600px) {
   .timeline-image {
     width: 300px;
   }
   .pattern-gallery > img {
     width: 100%;
+  }
+
+  .index-image > img {
+    width: 7rem;
+  }
+
+  .index-item:hover > .index-image > img {
+    width: 7.3rem;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .index-container {
+    flex-direction: column !important;
   }
 }
 
