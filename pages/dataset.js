@@ -13,8 +13,8 @@ export default function Home() {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
       <Bluebar />
+      <NavigBar pagename="Dataset" />
       <div className="container mt-3 d-flex flex-column text-center">
         <h3>Dataset</h3>
         <p>

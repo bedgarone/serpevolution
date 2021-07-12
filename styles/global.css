@@ -207,6 +207,12 @@ body {
   margin-bottom: 3em;
 }
 
+.queries-table > table {
+  display: block;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
 .wrap-container {
   display: flex;
   flex-wrap: wrap;

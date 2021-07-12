@@ -15,6 +15,7 @@ export default function Home() {
       </Head>
 
       <Bluebar />
+      <NavigBar />
       <div className="container mt-3 d-flex flex-column text-center">
         <h3>Most Searched Queries</h3>
         <div className="queries-table">
