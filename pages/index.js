@@ -78,6 +78,24 @@ export default function Home() {
                   </div>
                 </div>
               </Link>
+              <Link href="/timeline">
+                <div className="index-item d-flex">
+                  <div className="index-image">
+                    <img src="/serpevolution/assets/index/timeline.png" />
+                  </div>
+                  <div className="d-flex flex-column">
+                    <div className="index-title">Overall Timeline</div>
+                    <div className="index-subtitle">
+                      Compare in time the main changes occured in both SERP
+                    </div>
+                    <div className="index-description">
+                      Two timelines side by side are presented with the main
+                      changes ocurred in SERP. It is possible to filter this
+                      events by element introduction or navigation items.
+                    </div>
+                  </div>
+                </div>
+              </Link>
               <Link href="/layout">
                 <div className="index-item d-flex">
                   <div className="index-image">
