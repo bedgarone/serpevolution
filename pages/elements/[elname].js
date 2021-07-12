@@ -14,10 +14,10 @@ import elements, { bing } from "../../data/elements"; // elements - google eleme
 export async function getStaticProps(context) {
   const elname = context.params.elname;
   var element_google = Object.entries(elements).find((object) => {
-    return object[0] == elname;
+    return object[0] == elname && object[1].engine == "G";
   });
   var element_bing = Object.entries(bing).find((object) => {
-    return object[0] == elname;
+    return object[0] == elname && object[1].engine == "B";
   });
   return {
     props: {

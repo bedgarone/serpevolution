@@ -29,7 +29,7 @@ export default function Home() {
                   <div className="d-flex flex-column index-text">
                     <div className="index-title">Elements</div>
                     <div className="index-subtitle">
-                      Explore the different SERP elements.
+                      Explore the different SERP elements
                     </div>
                     <div className="index-description">
                       Each element page consists of an year line with the
