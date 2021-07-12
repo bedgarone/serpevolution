@@ -118,12 +118,39 @@ body {
   margin-top: 30px;
 }
 
+.main-li > div > .timeline-image > img {
+  max-height: 100px;
+  margin-top: 10px;
+}
+
 .timeline-image.interface > img {
   max-height: 100%;
 }
 
 .timeline-year {
   position: absolute;
+}
+
+.timeline-year-entry {
+  font-size: 0.9em;
+}
+
+.timeline.main-timeline > li:last-child {
+  border-left: 1px solid;
+  padding-bottom: 0;
+}
+
+.main-li {
+  width: 400px;
+}
+
+.timeline.main-timeline > li::before {
+  top: 5px;
+}
+
+.entry-title {
+  font-weight: 200;
+  font-size: 1.2em;
 }
 
 .timeline-year.bg-secondary {
@@ -398,6 +425,11 @@ a {
   .timeline-image {
     width: 300px;
   }
+
+  .main-li {
+    width: 300px;
+  }
+
   .pattern-gallery > img {
     width: 100%;
   }

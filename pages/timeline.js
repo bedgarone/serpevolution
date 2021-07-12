@@ -1,8 +1,143 @@
+import React, { useState } from "react";
 import Head from "next/head";
 import Bluebar from "../components/bluebar";
 import NavigBar from "../components/navigbar";
 
+import elements, { bing } from "./../data/elements"; // elements - google elements, bing - bing elements
+import events from "./../data/mainevents";
+
+export function yearTimeline(year, type, key, engine) {
+  var entries = [];
+  switch (type) {
+    case "all":
+      var el_entries = Object.entries(engine == "G" ? elements : bing).filter(
+        (object) => {
+          return object[1].presence[0] == year;
+        }
+      );
+
+      el_entries.forEach((element) => {
+        entries.push({
+          title: "Introduction of " + element[1].name,
+          type: "element",
+          image:
+            "elements/" +
+            element[1].engine +
+            "/" +
+            element[0] +
+            "/" +
+            element[1].evolution[0],
+          engine: element[1].engine,
+        });
+      });
+
+      var navigation = Object.entries(events).filter((object) => {
+        return (
+          object[1].year == year && object[1].engine == engine && object[1].type
+        );
+      });
+      navigation.forEach((event) => {
+        entries.push({
+          title: event[1].title,
+          type: event[1].type,
+          image: "timeline/" + event[1].image,
+          engine: event[1].engine,
+        });
+      });
+
+      break;
+    case "element":
+      var el_entries = Object.entries(engine == "G" ? elements : bing).filter(
+        (object) => {
+          return object[1].presence[0] == year;
+        }
+      );
+
+      el_entries.forEach((element) => {
+        entries.push({
+          title: "Introduction of " + element[1].name,
+          type: "element",
+          image:
+            "elements/" +
+            element[1].engine +
+            "/" +
+            element[0] +
+            "/" +
+            element[1].evolution[0],
+          engine: element[1].engine,
+        });
+      });
+      break;
+    case "navigation":
+      var navigation = Object.entries(events).filter((object) => {
+        return (
+          object[1].year == year && object[1].engine == engine && object[1].type
+        );
+      });
+      navigation.forEach((event) => {
+        entries.push({
+          title: event[1].title,
+          type: event[1].type,
+          image: "timeline/" + event[1].image,
+          engine: event[1].engine,
+        });
+      });
+      break;
+
+    default:
+      break;
+  }
+
+  return (
+    <li className="main-li" key={key}>
+      <span
+        className="badge rounded-pill bg-secondary timeline-year-entry"
+        style={{
+          backgroundColor:
+            engine == "G" ? "#4285f4 !important" : "#f47c42 !important",
+        }}
+      >
+        {year}
+      </span>
+      {entries.map((element, key) => {
+        const engine = element.engine;
+        return (
+          <div key={key}>
+            <div
+              className="entry-title"
+              style={{
+                borderBottom:
+                  "3px solid " + (engine == "G" ? "#4285f4" : "#f47c42"),
+                color: engine == "G" ? "#4285f4" : "#f47c42",
+              }}
+            >
+              {element.title}
+            </div>
+            <div className="timeline-image">
+              <img src={"./assets/" + element.image} />
+            </div>
+          </div>
+        );
+      })}
+    </li>
+  );
+}
+
 export default function Home() {
+  const [timeline_type, setType] = useState("all");
+  const categories = [
+    ["All", "#5388ad", "all"],
+    ["Elements", "#6495ED", "element"],
+    ["Navigation", "#e6952d", "navigation"],
+  ];
+  var first_decade = [];
+  var second_decade = [];
+  for (let i = 2000; i < 2010; i++) {
+    first_decade.push(i);
+  }
+  for (let i = 2010; i < 2021; i++) {
+    second_decade.push(i);
+  }
   return (
     <div>
       <Head>
@@ -16,11 +151,63 @@ export default function Home() {
 
       <Bluebar />
       <NavigBar pagename="Timeline" />
-      <div className="container mt-3 d-flex flex-column text-center">
-        This timeline will sum up all the major changes occured in both SERP,
-        regarding element introduction and main navigation items launched.
-        <hr />
-        Available from 11/12th July.
+      <div className="container mt-3 d-flex flex-column">
+        <div className="row">
+          <div className="main-title text-center">Overall Timeline</div>
+          <div className="col-12 d-flex justify-content-center align-items-center flex-wrap mt-3 mb-2">
+            {categories.map((cat, key) => {
+              return (
+                <div
+                  className={
+                    "category-badge " +
+                    (timeline_type == cat[2] ? "selected" : "")
+                  }
+                  style={{ backgroundColor: cat[1] }}
+                  onClick={() => setType(cat[2])}
+                  key={key}
+                >
+                  {cat[0]}
+                </div>
+              );
+            })}
+          </div>
+          <div className="col-lg-6 col-12">
+            <div className="d-flex flex-column align-items-center">
+              <div className="element-engine">
+                <img src={"./assets/google.png"} />
+              </div>
+            </div>
+            <ul className="timeline centered-containter main-timeline">
+              {first_decade.map((year, key) => {
+                return yearTimeline(year, timeline_type, key, "G");
+              })}
+            </ul>
+          </div>
+          <div className="col-lg-6 col-12">
+            <div className="d-flex flex-column align-items-center">
+              <div className="element-engine">
+                <img src={"./assets/bing.png"} />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-lg-6 col-12">
+            <ul className="timeline centered-containter main-timeline">
+              {second_decade.map((year, key) => {
+                return yearTimeline(year, timeline_type, key, "G");
+              })}
+            </ul>
+          </div>
+          <div className="col-lg-6 col-12">
+            {" "}
+            <ul className="timeline centered-containter main-timeline">
+              {second_decade.map((year, key) => {
+                return yearTimeline(year, timeline_type, key, "B");
+              })}
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   );
