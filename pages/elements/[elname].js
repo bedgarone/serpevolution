@@ -28,9 +28,11 @@ export async function getStaticProps(context) {
 }
 
 export async function getStaticPaths() {
-  const paths = Object.entries(elements).map((elm) => {
-    return { params: { elname: elm[0] } };
-  });
+  const paths = Object.entries(elements)
+    .filter((elm) => elm[0] !== "null")
+    .map((elm) => {
+      return { params: { elname: elm[0] } };
+    });
 
   Object.entries(bing).map((elm) => {
     paths.push({ params: { elname: elm[0] } });
