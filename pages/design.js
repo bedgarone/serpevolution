@@ -11,11 +11,11 @@ import interfaces_evol, {
   navigation_evol,
 } from "../data/interfaces";
 
-export function dynamicTimeline(category, engine) {
+export function dynamicTimeline(category, engine, decade) {
   const entries_engine =
     engine == "G"
       ? [
-          interfaces_evol.google,
+          decade == 1 ? interfaces_evol.google_fd : interfaces_evol.google_sd,
           logo_evol.google,
           statistics_evol.google,
           navigation_evol.google,
@@ -106,7 +106,7 @@ export default function Design() {
                 <img src={"./assets/google.png"} />
               </div>
             </div>
-            {dynamicTimeline(category, "G")}
+            {dynamicTimeline(category, "G", 1)}
           </div>
           <div className="col-12 col-lg-6">
             <div className="d-flex flex-column align-items-center">
@@ -114,6 +114,11 @@ export default function Design() {
                 <img src={"./assets/bing.png"} />
               </div>
             </div>
+          </div>
+          <div className="col-12 col-lg-6">
+            {dynamicTimeline(category, "G", 2)}
+          </div>
+          <div className="col-12 col-lg-6">
             {dynamicTimeline(category, "B")}
           </div>
         </div>
