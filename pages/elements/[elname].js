@@ -11,6 +11,8 @@ import ElementPatterns from "../../components/elementpatterns";
 import CodeIdentifiers from "../../components/codeidentifiers";
 import elements, { bing } from "../../data/elements"; // elements - google elements, bing - bing elements
 
+import * as Parser from "ua-parser-js";
+
 export async function getStaticProps(context) {
   const elname = context.params.elname;
   var element_google = Object.entries(elements).find((object) => {
@@ -57,17 +59,6 @@ export default function ElementPage({ element_google, element_bing }) {
     engine == "G" ? setEngine("B") : setEngine("G");
   };
 
-  //const router = useRouter();
-  //const { elname } = router.query;
-  // var element_temp = Object.entries(elements).find((object) => {
-  //   return object[0] == elname;
-  // });
-  //var element = elements.null;
-  //investigate and probabily change to getStaticProps
-  // if (element_temp !== undefined) {
-  //   element = element_temp[1];
-  // }
-
   return (
     <div>
       <Head>
@@ -81,7 +72,122 @@ export default function ElementPage({ element_google, element_bing }) {
 
       <Bluebar />
       <NavigBar pagename="Elements" />
-      <div className="container mt-3 mb-3">
+      <div className="container mt-3 mb-3 desktop-element">
+        <div className="d-flex flex-column align-items-center">
+          <ElementTitle title={element.name} type={element.type} />
+        </div>
+
+        <div className="row">
+          <div className="col-6">
+            <div className="d-flex flex-column align-items-center">
+              <div className="element-engine">
+                <img src={"../assets/google.png"} />
+              </div>
+            </div>
+          </div>
+          <div className="col-6">
+            <div className="d-flex flex-column align-items-center">
+              <div className="element-engine">
+                <img src={"../assets/bing.png"} />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="sectiontitle">Visual Evolution</div>
+        <div className="row">
+          <div className="col-6">
+            {element_google ? (
+              <ElementTimeline serpelement={element_google} />
+            ) : (
+              "This element is exclusive to Bing"
+            )}
+          </div>
+          <div className="col-6">
+            {element_bing ? (
+              <ElementTimeline serpelement={element_bing} />
+            ) : (
+              "This element is exclusive to Google"
+            )}
+          </div>
+        </div>
+
+        <div className="sectiontitle">Positioning</div>
+        <div className="row">
+          <div className="col-6">
+            {element_google ? (
+              <Positioning
+                shortname={element_google.shortname}
+                engine={element_google.engine}
+                available={element_google.positioning}
+              />
+            ) : (
+              ""
+            )}
+          </div>
+          <div className="col-6">
+            {element_bing ? (
+              <Positioning
+                shortname={element_bing.shortname}
+                engine={element_bing.engine}
+                available={element_bing.positioning}
+              />
+            ) : (
+              ""
+            )}
+          </div>
+        </div>
+
+        <div className="sectiontitle">Presence timeline</div>
+        <div className="row">
+          <div className="col-6">
+            {element_google ? (
+              <YearLine present={element_google.presence} />
+            ) : (
+              ""
+            )}
+          </div>
+          <div className="col-6">
+            {element_bing ? <YearLine present={element_bing.presence} /> : ""}
+          </div>
+        </div>
+
+        <div className="sectiontitle">HTML Identifiers</div>
+        <div className="row">
+          <div className="col-6 pr-2">
+            {element_google ? (
+              <CodeIdentifiers identifiers={element_google.identifiers} />
+            ) : (
+              ""
+            )}
+          </div>
+          <div className="col-6 pl-2">
+            {element_bing ? (
+              <CodeIdentifiers identifiers={element_bing.identifiers} />
+            ) : (
+              ""
+            )}
+          </div>
+        </div>
+
+        <div className="sectiontitle">Design Patterns</div>
+        <div className="row">
+          <div className="col-6">
+            {element_google ? (
+              <ElementPatterns elm_patterns={element_google.patterns} />
+            ) : (
+              ""
+            )}
+          </div>
+          <div className="col-6">
+            {element_bing ? (
+              <ElementPatterns elm_patterns={element_bing.patterns} />
+            ) : (
+              ""
+            )}
+          </div>
+        </div>
+      </div>
+      <div className="container mt-3 mb-3 mobile-element">
         <div className="d-flex flex-column align-items-center">
           <div className="element-engine">
             <img

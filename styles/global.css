@@ -427,6 +427,10 @@ a {
   margin-right: 0;
 }
 
+.mobile-element {
+  display: none;
+}
+
 @media only screen and (max-width: 600px) {
   .timeline-image {
     width: 300px;
@@ -452,6 +456,16 @@ a {
 @media only screen and (max-width: 900px) {
   .index-container {
     flex-direction: column !important;
+  }
+}
+
+@media only screen and (max-width: 1020px) {
+  .desktop-element {
+    display: none;
+  }
+
+  .mobile-element {
+    display: block;
   }
 }
 
