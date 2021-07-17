@@ -151,7 +151,7 @@ export default function ElementPage({ element_google, element_bing }) {
           </div>
         </div>
 
-        <div className="sectiontitle">HTML Identifiers</div>
+        <div className="sectiontitle mt-3">HTML Identifiers</div>
         <div className="row">
           <div className="col-6 pr-2">
             {element_google ? (
@@ -169,7 +169,7 @@ export default function ElementPage({ element_google, element_bing }) {
           </div>
         </div>
 
-        <div className="sectiontitle">Design Patterns</div>
+        <div className="sectiontitle mt-3">Design Patterns</div>
         <div className="row">
           <div className="col-6">
             {element_google ? (
@@ -206,12 +206,10 @@ export default function ElementPage({ element_google, element_bing }) {
               : "Exclusive element"}
           </button>
         </div>
-        <div className="sectiontitle">Presence timeline</div>
-        <YearLine present={element.presence} />
 
-        <div className="row mt-4">
+        <div className="row">
           <div className="col-12 col-lg-6">
-            <div className="sectiontitle">Evolution</div>
+            <div className="sectiontitle">Visual Evolution</div>
             <ElementTimeline serpelement={element} />
           </div>
           <div className="col-12 col-lg-6">
@@ -221,6 +219,8 @@ export default function ElementPage({ element_google, element_bing }) {
               engine={element.engine}
               available={element.positioning}
             />
+            <div className="sectiontitle mt-4">Presence timeline</div>
+            <YearLine present={element.presence} />
             <div className="sectiontitle mt-4">HTML Identifiers</div>
             <CodeIdentifiers identifiers={element.identifiers} />
             <div className="sectiontitle mt-4">Design Patterns</div>
