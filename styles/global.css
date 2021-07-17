@@ -140,6 +140,14 @@ body {
   padding-bottom: 0;
 }
 
+.timeline.design-timeline > li:last-child {
+  border-left: 1px solid;
+  padding-bottom: 0;
+}
+ul.design-timeline,
+ul.main-timeline {
+  margin-bottom: 0;
+}
 .main-li {
   width: 400px;
 }

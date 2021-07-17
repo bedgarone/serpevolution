@@ -16,9 +16,9 @@ export function dynamicTimeline(category, engine, decade) {
     engine == "G"
       ? [
           decade == 1 ? interfaces_evol.google_fd : interfaces_evol.google_sd,
-          logo_evol.google,
-          statistics_evol.google,
-          navigation_evol.google,
+          decade == 1 ? logo_evol.google_fd : logo_evol.google_sd,
+          decade == 1 ? statistics_evol.google_fd : statistics_evol.google_sd,
+          decade == 1 ? navigation_evol.google_fd : navigation_evol.google_sd,
         ]
       : [
           interfaces_evol.bing,

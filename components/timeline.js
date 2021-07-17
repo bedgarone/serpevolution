@@ -1,6 +1,6 @@
 export default function Timeline({ entries, path }) {
   return (
-    <ul className="timeline centered-containter">
+    <ul className="timeline centered-containter design-timeline">
       {entries.map((element, key) => {
         const year = element.substring(0, 4);
         return (
