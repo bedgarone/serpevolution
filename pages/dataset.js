@@ -31,6 +31,12 @@ export default function Home() {
             </button>
           </a>
         </div>
+        <div className="d-flex justify-content-center">
+          <img
+            className="dataset-graph"
+            src="./assets/method/dataset_graph.png"
+          />
+        </div>
       </div>
     </div>
   );

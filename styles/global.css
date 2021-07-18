@@ -468,6 +468,12 @@ a {
   margin-bottom: 1em;
 }
 
+.dataset-graph {
+  width: 90%;
+  max-width: 500px;
+  margin-top: 1em;
+}
+
 @media only screen and (max-width: 600px) {
   .timeline-image {
     width: 300px;

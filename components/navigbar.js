@@ -12,8 +12,8 @@ const NavigBar = ({ pagename }) => {
   const pages = [
     ["Home", "/serpevolution"],
     ["Elements", "/serpevolution/elements"],
-    ["Timeline", "/serpevolution/timeline"],
     ["Patterns", "/serpevolution/patterns"],
+    ["Timeline", "/serpevolution/timeline"],
     ["Layout", "/serpevolution/layout"],
     ["Design", "/serpevolution/design"],
     ["Dataset", "/serpevolution/dataset"],
