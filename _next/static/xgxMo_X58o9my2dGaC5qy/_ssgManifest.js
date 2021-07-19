@@ -1,0 +1,1 @@
+self.__SSG_MANIFEST=new Set(["\u002Felements\u002F[elname]","\u002Fpatterns\u002F[pattern]","\u002Ftimeline\u002F[year]"]);self.__SSG_MANIFEST_CB&&self.__SSG_MANIFEST_CB()
