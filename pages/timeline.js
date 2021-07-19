@@ -188,6 +188,7 @@ export default function Home() {
               <div className="element-engine">
                 <img src={"./assets/bing.png"} />
               </div>
+              <div className="bornyet">Not born yet!</div>
             </div>
           </div>
         </div>

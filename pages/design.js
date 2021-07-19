@@ -113,6 +113,9 @@ export default function Design() {
               <div className="element-engine">
                 <img src={"./assets/bing.png"} />
               </div>
+              {category == "o" ? (
+                <div className="bornyet">Not born yet!</div>
+              ) : null}
             </div>
           </div>
           <div className="col-12 col-lg-6">
