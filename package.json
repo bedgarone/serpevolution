@@ -232,6 +232,9 @@
   "devDependencies": {
     "gh-pages": "^3.2.3"
   },
+  "optionalDependencies": {
+    "fsevents": "*"
+  },
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
