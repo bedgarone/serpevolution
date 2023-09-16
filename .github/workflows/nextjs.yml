@@ -32,7 +32,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       - name: Install dependencies
-        run: npm ci --legacy-peer-deps --ignore-scripts --no-optional --no-audit --production
+        run: npm ci --legacy-peer-deps --ignore-scripts --omit=optional --no-audit --production
       - name: Remove fsevents
         run: rm -rf node_modules/fsevents
       - name: Build the application
