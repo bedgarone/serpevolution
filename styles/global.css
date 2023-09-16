@@ -489,6 +489,42 @@ a {
   color: #f47c42;
 }
 
+.paper-row {
+  gap: 2rem;
+}
+
+.paper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #d3ecff;
+  padding: 1rem;
+  border-radius: 30px;
+  width: 30rem;
+}
+
+.paper .type {
+  font-weight: bold;
+  color:#2a639f
+}
+
+.paper img {
+  margin-bottom: 0;
+  width: 100%;
+  cursor: pointer;
+}
+
+.paper-citation {
+  font-weight: 300;
+  font-style: italic;
+  font-size: 0.8em;
+  text-align: center;
+}
+
+#conference-logo {
+  width: 10rem;
+}
+
 @media only screen and (max-width: 600px) {
   .timeline-image {
     width: 300px;

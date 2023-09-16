@@ -18,6 +18,7 @@ const NavigBar = ({ pagename }) => {
     ["Design", "/serpevolution/design"],
     ["Dataset", "/serpevolution/dataset"],
     ["About", "/serpevolution/about"],
+    ["Articles", "/serpevolution/articles"],
   ];
   const [isOpen, setIsOpen] = useState(false);
 

@@ -16,7 +16,7 @@ export default function Home() {
       <Bluebar />
       <NavigBar pagename="Dataset" />
       <div className="container mt-3 d-flex flex-column text-center align-items-center">
-        <h3>Dataset</h3>
+        <div className="main-title text-center">Dataset</div>
         <p>
           <b>7892</b> SERP captures extracted from the <i>Internet Archive</i>.
         </p>
