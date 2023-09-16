@@ -551,6 +551,15 @@ a {
   .index-container {
     flex-direction: column !important;
   }
+
+  .paper-row {
+    flex-direction: column;
+    max-width: 100%;
+  }
+  .paper {
+    width: 100%;
+  }
+  
 }
 
 @media only screen and (max-width: 1020px) {
