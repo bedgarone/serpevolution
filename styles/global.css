@@ -205,8 +205,16 @@ ul.main-timeline {
 }
 
 .drive-btn > img {
-  height: 30px;
-  margin-right: 10px;
+  height: 22px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.citation {
+  max-width: 40rem;
+  margin: 1rem 0;
+  font-style: italic;
+  color: #4f4f4f;
 }
 
 .queries-table {
@@ -403,6 +411,7 @@ a {
   cursor: pointer;
   margin: 0 15px 15px 0;
   width: 100%;
+  color: black;
 }
 
 .index-item:hover > .index-image > img {

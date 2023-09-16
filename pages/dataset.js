@@ -15,22 +15,23 @@ export default function Home() {
       </Head>
       <Bluebar />
       <NavigBar pagename="Dataset" />
-      <div className="container mt-3 d-flex flex-column text-center">
+      <div className="container mt-3 d-flex flex-column text-center align-items-center">
         <h3>Dataset</h3>
         <p>
           <b>7892</b> SERP captures extracted from the <i>Internet Archive</i>.
         </p>
         <div>
           <a
-            href="https://drive.google.com/file/d/1tjOPMcrHb3DxJA9n9XuUcoiFf_a3Og0p/view?usp=sharing"
+            href="https://doi.org/10.25747/991g-f765"
             target="_blank"
           >
-            <button type="button" className="drive-btn btn btn-light">
-              <img src="assets/drive.png" />
-              Download from Google Drive
+            <button type="button" className="drive-btn btn btn-dark">
+              Download from
+              <img src="assets/inesctec.png" />
             </button>
           </a>
         </div>
+        <div className="citation" >{'OLIVEIRA, B.E., Lopes C. T. Evolution of Web search engine interfaces through SERP screenshots and HTML complete pages for 20 years [dataset]. 26 July 2021. INESC TEC research data repository. DOI: '}<a href="https://doi.org/10.25747/991g-f765" target="_blank">https://doi.org/10.25747/991g-f765</a></div>
         <div className="d-flex justify-content-center">
           <img
             className="dataset-graph"
